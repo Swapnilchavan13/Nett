@@ -63,19 +63,22 @@ const nettZeroSuiteSections = {
       headline: "Know Your Carbon Footprint",
       description: "Accurately quantify your organization's greenhouse gas emissions across Scope 1, 2, and 3. Our comprehensive measurement tools provide granular insights into your environmental impact.",
       backgroundImage: sectionMeasure,
+      buttontext:"See The Demo Video"
     },
     {
       title: "Reduce",
       headline: "Cut Emissions at Source",
       description: "Implement data-driven strategies to minimize your carbon output. From energy efficiency to process optimization, we identify the highest-impact reduction opportunities.",
       backgroundImage: sectionReduce,
+      buttontext:"Get In Touch"
     },
     {
       title: "Offset",
       headline: "Balance What Remains",
       description: "Neutralize unavoidable emissions through verified carbon offset projects. Support reforestation, renewable energy, and community initiatives that deliver real climate impact.",
       backgroundImage: sectionOffset,
-    },
+      buttontext:"Buy High-Integrity Credits"
+    }, 
   ],
   manageCarbonCredits: [
     {
@@ -83,18 +86,21 @@ const nettZeroSuiteSections = {
       headline: "Create Carbon Assets",
       description: "Transform sustainable practices into certified carbon credits. Our development team guides you through project design, validation, and registration with leading standards.",
       backgroundImage: sectionDevelop,
+      buttontext:"View Cerbon Credit Projects"
     },
     {
       title: "Purchase",
       headline: "Acquire Quality Credits",
       description: "Access a curated marketplace of verified carbon credits from diverse project types. Every credit is traceable, transparent, and aligned with your sustainability goals.",
       backgroundImage: sectionPurchase,
+      buttontext:"Get a Quote for Carbon Credits"
     },
     {
       title: "Invest",
       headline: "Grow Sustainable Wealth",
       description: "Build a portfolio of climate-positive investments. From green bonds to carbon credit funds, we help you align financial returns with environmental outcomes.",
       backgroundImage: sectionInvest,
+      buttontext:"Learn More"
     },
   ],
   sustainableMarketplace: [
@@ -103,18 +109,21 @@ const nettZeroSuiteSections = {
       headline: "Tackle Supply Chain Emissions",
       description: "Partner with verified sustainable suppliers to dramatically reduce your Scope 3 footprint. Our marketplace connects you with eco-conscious vendors across every category.",
       backgroundImage: sectionScope3,
+      buttontext:"Visit Our Clime Store"
     },
     {
       title: "Support Green Businesses",
       headline: "Amplify Sustainable Commerce",
       description: "Every purchase powers the green economy. Discover and support businesses that share your commitment to environmental stewardship and responsible practices.",
       backgroundImage: sectionGreenBiz,
+      buttontext:"See Our Partners"
     },
     {
       title: "Work with Verified Vendors",
       headline: "Trust Through Transparency",
       description: "All marketplace vendors are rigorously vetted against sustainability standards. Build your supply chain with confidence knowing each partner meets strict environmental criteria.",
       backgroundImage: sectionVendors,
+      buttontext:"See Our Selection Process"
     },
   ],
   climateLiteracy: [
@@ -123,18 +132,21 @@ const nettZeroSuiteSections = {
       headline: "Executive Climate Fluency",
       description: "Equip your leadership team with the knowledge to drive strategic sustainability decisions. Our executive programs cover ESG integration, climate risk, and stakeholder communication.",
       backgroundImage: sectionLeaders,
+      buttontext:"Visit ClimeSchool"
     },
     {
       title: "Train Your Faculty",
       headline: "Academic Excellence in Sustainability",
       description: "Empower educators to inspire the next generation of climate leaders. Our faculty development programs integrate cutting-edge climate science into curricula across disciplines.",
       backgroundImage: sectionFaculty,
+      buttontext:"See Our Curriculum"
     },
     {
       title: "Join Our Online Programs",
       headline: "Learn at Your Own Pace",
       description: "Access world-class climate education from anywhere. Our online courses combine expert instruction, interactive modules, and real-world case studies for maximum impact.",
       backgroundImage: sectionOnline,
+      buttontext:"Check Our Online Program"
     },
   ],
 };

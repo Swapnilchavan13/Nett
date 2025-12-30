@@ -6,6 +6,7 @@ interface ScrollSectionProps {
   title: string;
   headline: string;
   description: string;
+  buttontext: string;
   position?: "left" | "right";
   index?: number;
 }
@@ -15,6 +16,7 @@ const ScrollSection = ({
   title,
   headline,
   description,
+  buttontext,
   position = "left",
   index = 0,
 }: ScrollSectionProps) => {
@@ -105,7 +107,7 @@ const ScrollSection = ({
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <div className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
-            <span className="text-xs text-muted-foreground tracking-wider">SCROLL TO CONTINUE</span>
+            <span className="text-xs text-muted-foreground tracking-wider">{buttontext}</span>
           </motion.div>
         </motion.div>
       </div>
