@@ -28,8 +28,8 @@ const StatsSection = ({ stat, index, position = "left" }: StatsSectionProps) => 
         animate={{ scale: isInView ? 1.05 : 1.15 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
-        <div className="absolute inset-0 bg-background/85" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent" />
+        <div className="absolute inset-0 bg-background/55" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
       </motion.div>
 
       {/* Content */}

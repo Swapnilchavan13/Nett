@@ -28,8 +28,8 @@ const PartnersSection = ({ partner, category, index, position = "left" }: Partne
         animate={{ scale: isInView ? 1 : 1.1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
-        <div className="absolute inset-0 bg-background/80" />
-        <div className={`absolute inset-0 bg-gradient-to-${position === 'left' ? 'r' : 'l'} from-background via-background/60 to-transparent`} />
+        <div className="absolute inset-0 bg-background/50" />
+        <div className={`absolute inset-0 bg-gradient-to-${position === 'left' ? 'r' : 'l'} from-background via-background/35 to-transparent`} />
       </motion.div>
 
       {/* Content */}

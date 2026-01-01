@@ -30,8 +30,8 @@ const FootprintSection = ({ location, index, position = "left" }: FootprintSecti
         animate={{ scale: isInView ? 1 : 1.1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
-        <div className="absolute inset-0 bg-background/75" />
-        <div className={`absolute inset-0 bg-gradient-to-${position === 'left' ? 'r' : 'l'} from-background via-background/50 to-transparent`} />
+        <div className="absolute inset-0 bg-background/45" />
+        <div className={`absolute inset-0 bg-gradient-to-${position === 'left' ? 'r' : 'l'} from-background via-background/30 to-transparent`} />
       </motion.div>
 
       {/* Content */}

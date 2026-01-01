@@ -51,12 +51,12 @@ const LeaderCarousel = ({ items }: LeaderCarouselProps) => {
           transition={{ delay: 0.5 }}
         >
           <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
-          <span className="text-primary text-sm font-medium tracking-[0.3em] uppercase">Welcome To</span>
+          <span className="text-primary text-sm font-medium tracking-[0.3em] uppercase">NettZero</span>
           <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
         </motion.div>
 
         <h1 className="heading-display text-5xl md:text-7xl lg:text-8xl text-foreground mb-6">
-          Nett<span className="text-gradient">Zero</span>
+          Clime<span className="text-gradient">Score</span>
         </h1>
         
         <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">
@@ -65,16 +65,19 @@ const LeaderCarousel = ({ items }: LeaderCarouselProps) => {
       </motion.div>
 
       {/* Carousel */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-6">
-        <div className="flex items-center justify-center gap-4 md:gap-6">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-6">
           {items.map((item, index) => {
             const isActive = index === activeIndex;
             const distance = Math.abs(index - activeIndex);
             
+            // On mobile, only show active and adjacent items
+            const isMobileVisible = distance <= 1;
+            
             return (
               <motion.div
                 key={item.name}
-                className="relative cursor-pointer group"
+                className={`relative cursor-pointer group ${!isMobileVisible ? 'hidden sm:block' : ''}`}
                 initial={{ opacity: 0, y: 60 }}
                 animate={{ 
                   opacity: isInView ? 1 : 0, 
@@ -94,7 +97,7 @@ const LeaderCarousel = ({ items }: LeaderCarouselProps) => {
                 {/* Card */}
                 <div className={`
                   relative overflow-hidden rounded-2xl transition-all duration-500
-                  ${isActive ? 'w-64 md:w-80 h-80 md:h-96' : 'w-32 md:w-48 h-64 md:h-80'}
+                  ${isActive ? 'w-48 sm:w-64 md:w-80 h-64 sm:h-80 md:h-96' : 'w-16 sm:w-32 md:w-48 h-48 sm:h-64 md:h-80'}
                 `}>
                   {/* Image */}
                   <div 
