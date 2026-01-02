@@ -594,7 +594,7 @@ const Index = () => {
                 <div className="w-8 sm:w-16 h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
               </div>
               <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-foreground mb-3 sm:mb-4">
-                Clime<span className="text-gradient">Score</span>
+                Nett<span className="text-gradient">Zero</span>
               </h2>
               <p className="text-muted-foreground text-sm sm:text-base max-w-md mx-auto">
                 Building a sustainable future, one measurement at a time.
