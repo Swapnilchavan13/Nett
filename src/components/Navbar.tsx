@@ -57,9 +57,20 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <a href="#" className="flex items-center gap-2 group">
-              <span className="font-display text-xl md:text-2xl font-bold text-foreground">
-                Nett<span className="text-gradient">Zero</span>
-              </span>
+              {/* <span className="font-display text-xl md:text-2xl font-bold text-foreground"> */}
+                {/* Nett<span className="text-gradient">Zero</span> */}
+                     {/* </span> */}
+     <div className="flex flex-col items-center text-center gap-3">
+  <img
+    src="https://nettzero.world/wp-content/uploads/2024/02/cropped-ce2055_a34cf15bcb3c4c4b9851a279e2de0f4cmv2-Photoroom.webp"
+    alt="NettZero Logo"
+    className="w-40 h-auto object-contain rounded-lg opacity-90 transition-opacity duration-300 group-hover:opacity-100"
+  />
+
+</div>
+
+
+
             </a>
 
             {/* Desktop Navigation */}

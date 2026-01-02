@@ -56,11 +56,11 @@ const LeaderCarousel = ({ items }: LeaderCarouselProps) => {
         </motion.div>
 
         <h1 className="heading-display text-5xl md:text-7xl lg:text-8xl text-foreground mb-6">
-          Clime<span className="text-gradient">Score</span>
+          Nett<span className="text-gradient">Zero</span>
         </h1>
         
         <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">
-          A comprehensive climate action platform — measuring, reducing, and offsetting carbon for a sustainable future.
+          5 Distinct Products. 1 Unified Vision. Carbon Dioxide Removal.
         </p>
       </motion.div>
 

@@ -53,10 +53,10 @@ import footprintCoorg from "@/assets/footprint-coorg.jpg";
 
 const carouselItems = [
   { name: "ClimeScore", image: carouselClimeScore, tagline: "Measure your carbon footprint" },
-  { name: "ClimeGrove", image: carouselClimeGrove, tagline: "Grow your green legacy" },
-  { name: "ClimeSchool", image: carouselClimeSchool, tagline: "Learn climate action" },
-  { name: "ClimeStore", image: carouselClimeStore, tagline: "Shop sustainably" },
-  { name: "ClimeFolio", image: carouselClimeFolio, tagline: "Invest in the future" },
+  { name: "ClimeGrove", image: carouselClimeGrove, tagline: "Develop CDR Carbon Credits" },
+  { name: "ClimeSchool", image: carouselClimeSchool, tagline: "Further Climate Literacy" },
+  { name: "ClimeStore", image: carouselClimeStore, tagline: "Decarbonise Supply Chain" },
+  { name: "ClimeFolio", image: carouselClimeFolio, tagline: "Purchases Curated Carbon Credits" },
 ];
 
 // Section 1: The NettZero Suite
@@ -65,20 +65,23 @@ const nettZeroSuiteSections = {
     {
       title: "Measure",
       headline: "Know Your Carbon Footprint",
-      description: "Accurately quantify your organization's greenhouse gas emissions across Scope 1, 2, and 3. Our comprehensive measurement tools provide granular insights into your environmental impact.",
+      description: "Accurately quantify your organization's greenhouse gas emissions across Scope 1, 2, and 3. Our comprehensive AI powered measurement tools provide granular insights into your environmental impact. Trusted by industry leaders since 2021.",
       backgroundImage: sectionMeasure,
+      btn:'See The Demo Video'
     },
     {
       title: "Reduce",
       headline: "Cut Emissions at Source",
-      description: "Implement data-driven strategies to minimize your carbon output. From energy efficiency to process optimization, we identify the highest-impact reduction opportunities.",
+      description: "Implement data-driven strategies to minimize your carbon output. From energy efficiency to process optimization, we identify the highest-impact reduction opportunities. Powered by AI trained to detect target based reduction.",
       backgroundImage: sectionReduce,
+      btn:'Get In Touch'
     },
     {
       title: "Offset",
       headline: "Balance What Remains",
-      description: "Neutralize unavoidable emissions through verified carbon offset projects. Support reforestation, renewable energy, and community initiatives that deliver real climate impact.",
+      description: "Neutralize unavoidable emissions through verified carbon offset projects. Support reforestation, renewable energy, and community initiatives that deliver real climate impact Curated by a panel of experts",
       backgroundImage: sectionOffset,
+      btn:'Buy High Integrity Credits'
     },
   ],
   manageCarbonCredits: [
@@ -87,38 +90,44 @@ const nettZeroSuiteSections = {
       headline: "Create Carbon Assets",
       description: "Transform sustainable practices into certified carbon credits. Our development team guides you through project design, validation, and registration with leading standards.",
       backgroundImage: sectionDevelop,
+      btn:'View Our Carbon Credit Projects'
     },
     {
       title: "Purchase",
       headline: "Acquire Quality Credits",
       description: "Access a curated marketplace of verified carbon credits from diverse project types. Every credit is traceable, transparent, and aligned with your sustainability goals.",
       backgroundImage: sectionPurchase,
+      btn:'Get a Quote for Carbon Credits'
     },
     {
       title: "Invest",
       headline: "Grow Sustainable Wealth",
       description: "Build a portfolio of climate-positive investments. From green bonds to carbon credit funds, we help you align financial returns with environmental outcomes.",
       backgroundImage: sectionInvest,
+       btn:'Learn More'
     },
   ],
   sustainableMarketplace: [
     {
       title: "Reduce Your Scope 3",
       headline: "Tackle Supply Chain Emissions",
-      description: "Partner with verified sustainable suppliers to dramatically reduce your Scope 3 footprint. Our marketplace connects you with eco-conscious vendors across every category.",
+      description: "Partner with verified sustainable suppliers to dramatically reduce your Scope 3 footprint. Our marketplace connects you with eco-conscious vendors across every category. Each one with a verified Carbon Emission Footprint",
       backgroundImage: sectionScope3,
+       btn:'Visit Our ClimeStore'
     },
     {
       title: "Support Green Businesses",
       headline: "Amplify Sustainable Commerce",
-      description: "Every purchase powers the green economy. Discover and support businesses that share your commitment to environmental stewardship and responsible practices.",
+      description: "Every purchase powers the green economy. Discover and support businesses that share your commitment to environmental stewardship and responsible practices. Without any price premium",
       backgroundImage: sectionGreenBiz,
+       btn:'See Our Partners'
     },
     {
       title: "Work with Verified Vendors",
       headline: "Trust Through Transparency",
       description: "All marketplace vendors are rigorously vetted against sustainability standards. Build your supply chain with confidence knowing each partner meets strict environmental criteria.",
       backgroundImage: sectionVendors,
+       btn:'See Our Selection Process'
     },
   ],
   climateLiteracy: [
@@ -127,18 +136,21 @@ const nettZeroSuiteSections = {
       headline: "Executive Climate Fluency",
       description: "Equip your leadership team with the knowledge to drive strategic sustainability decisions. Our executive programs cover ESG integration, climate risk, and stakeholder communication.",
       backgroundImage: sectionLeaders,
+       btn:'Visit ClimeSchool'
     },
     {
       title: "Train Your Faculty",
       headline: "Academic Excellence in Sustainability",
       description: "Empower educators to inspire the next generation of climate leaders. Our faculty development programs integrate cutting-edge climate science into curricula across disciplines.",
       backgroundImage: sectionFaculty,
+      btn: 'See Our Curriculum'
     },
     {
       title: "Join Our Online Programs",
       headline: "Learn at Your Own Pace",
       description: "Access world-class climate education from anywhere. Our online courses combine expert instruction, interactive modules, and real-world case studies for maximum impact.",
       backgroundImage: sectionOnline,
+      btn: 'Check Our Online Programs'
     },
   ],
 };
@@ -285,37 +297,37 @@ const statsData = {
 const partnersData = {
   customers: [
     {
-      name: "Enterprise Clients",
-      description: "Fortune 500 companies and industry leaders trust NettZero to guide their sustainability journey, from initial assessment to net-zero achievement.",
+      name: "Hospitality Leaders from Enternprise Clients",
+      description: "India’s leading Sustainable Hospitality organisations trust ClimeScore to measure and report their Carbon Emissions. From The Machan to The Tamara - they bank on our platform.",
       backgroundImage: sectionPartners,
     },
     {
-      name: "SME Partners",
-      description: "Small and medium enterprises access enterprise-grade sustainability tools tailored to their scale, enabling climate action at every business size.",
+      name: "Academic Institutions",
+      description: "ClimeScore is deployed at the finest & most reputed academic campuses across the country to measure their emissions - resulting in an impact through over 75,000 students & faculty.",
       backgroundImage: sectionGreenBiz,
     },
   ],
   partners: [
     {
       name: "Technology Partners",
-      description: "Collaborating with leading tech companies to integrate climate data into business intelligence platforms and enterprise resource planning systems.",
+      description: "We work with some of the most robust, reliable and renowned players that provide technology to CDR Carbon Credit Developers. From dMRV providers with over 25 installations, to pyrolisis plant makers that are patent pending and recognised by registries such as Isometric to auditors like CERES - our standards are at par with the best in the world of Carbon Credits & Carbon Management.",
       backgroundImage: sectionPurchase,
     },
     {
       name: "Implementation Partners",
-      description: "A global network of certified consultants and implementation specialists ensuring seamless deployment of NettZero solutions across regions.",
+      description: "ClimeGrove works with over 15,000 farmers through a network of NABARD aligned NGO’s and local agencies with years of experience in farmer management. All biomass management & fertiliser distribution is done on the back of this network - ensuring crucial last mile solidity in implementation.",
       backgroundImage: sectionLeaders,
     },
   ],
   standards: [
     {
       name: "Certification Bodies",
-      description: "Aligned with ISO 14001, GHG Protocol, Verra, Gold Standard, and other leading frameworks ensuring our methodologies meet the highest global standards.",
+      description: "ClimeScore is developed along the rigorous factors and guidelines contained within the GHG Protocol, DEFRA, IPCC and ISO 14068. ClimeGrove CDR programs are built to generate credits as per the stringent standards of Carbon Standards International, Puro and Isometric, amongst others.",
       backgroundImage: sectionStandards,
     },
     {
       name: "Research Institutions",
-      description: "Partnering with universities and research centers to advance climate science and develop innovative carbon removal technologies.",
+      description: "Partnering with universities and research centers to advance climate science and develop innovative carbon removal technologies. We are aligned with the prestigious Symbiosis College, Pune and The Institute of Chemical Technology, Mumbai - for developing research on biomass burning and Direct Air Capture nana-catalysts, respectively.",
       backgroundImage: sectionFaculty,
     },
   ],
@@ -323,19 +335,20 @@ const partnersData = {
 
 // Section 5: NettZero Footprint
 const footprintData = [
-  {
-    name: "Nubra Valley",
-    state: "Ladakh",
-    headline: "Ladakh's First Carbon Neutral Resort",
-    description: "We have created Ladakh's first carbon neutral resort called Stone Hedge, setting a new benchmark for sustainable hospitality in one of the world's most pristine mountain landscapes.",
-    backgroundImage: footprintNubra,
-  },
+  // {
+  //   name: "Nubra Valley",
+  //   state: "Ladakh",
+  //   headline: "Ladakh's First Carbon Neutral Resort",
+  //   description: "We have created Ladakh's first carbon neutral resort called Stone Hedge, setting a new benchmark for sustainable hospitality in one of the world's most pristine mountain landscapes.",
+  //   backgroundImage: footprintNubra,
+  // },
   {
     name: "Rajgarh",
     state: "Himachal Pradesh",
     headline: "Biochar from Orchard Prunings",
     description: "We are creating biochar using orchard prunings from over 100,000 trees — which were earlier getting burnt — transforming agricultural waste into a powerful carbon sequestration tool.",
     backgroundImage: footprintRajgarh,
+    map:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSetx4q1A7t0K-nWlc3w4ceVpd75Yk8Q43JbQ&s"
   },
   {
     name: "Puranpur",
@@ -343,20 +356,22 @@ const footprintData = [
     headline: "Protecting Air Quality Through Biochar",
     description: "We are creating biochar using rice-straw from over 5,000 farmers — directly preventing hundreds of tons of PM2.5 from affecting the AQI and improving regional air quality.",
     backgroundImage: footprintPuranpur,
+     map:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSetx4q1A7t0K-nWlc3w4ceVpd75Yk8Q43JbQ&s"
   },
-  {
-    name: "Mandawa",
-    state: "Rajasthan",
-    headline: "Rajasthan's First Carbon Neutral Resort",
-    description: "We have created Rajasthan's first carbon neutral resort — the legacy Mandawa — by measuring & reporting emissions for the past 4 years, setting a sustainability standard for heritage tourism.",
-    backgroundImage: footprintMandawa,
-  },
+  // {
+  //   name: "Mandawa",
+  //   state: "Rajasthan",
+  //   headline: "Rajasthan's First Carbon Neutral Resort",
+  //   description: "We have created Rajasthan's first carbon neutral resort — the legacy Mandawa — by measuring & reporting emissions for the past 4 years, setting a sustainability standard for heritage tourism.",
+  //   backgroundImage: footprintMandawa,
+  // },
   {
     name: "Bandhavgarh",
     state: "Madhya Pradesh",
     headline: "Invasive Species to Biochar",
     description: "We are converting invasive species and rice straw into biochar for the last 2 years. We've covered nearly 10,000 farmers and prevented over 200,000 kgs of rice straw from being burnt.",
     backgroundImage: footprintBandhavgarh,
+     map:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSetx4q1A7t0K-nWlc3w4ceVpd75Yk8Q43JbQ&s"
   },
   {
     name: "Damoh",
@@ -364,21 +379,22 @@ const footprintData = [
     headline: "Farmer Cooperative Impact",
     description: "We are converting rice straw into biochar and working with a cooperative of over 20,000 farmers. This year, we will prevent 300,000 kgs of rice straw from being burnt.",
     backgroundImage: footprintDamoh,
+    
   },
-  {
-    name: "Lonavala",
-    state: "Maharashtra",
-    headline: "Asia's First Carbon Neutral Resort",
-    description: "We have created Asia's first carbon neutral resort by working with the prestigious eco-luxury retreat called The Machan, for the last four years — pioneering sustainable luxury tourism.",
-    backgroundImage: footprintLonavala,
-  },
-  {
-    name: "Coorg",
-    state: "Karnataka",
-    headline: "Comprehensive Emissions Tracking",
-    description: "We are working with one of India's most admired resorts, The Tamara Coorg — by helping them accurately track and measure their emissions across Scope 1, 2 and 3, with reduction and sequestration strategies being developed.",
-    backgroundImage: footprintCoorg,
-  },
+  // {
+  //   name: "Lonavala",
+  //   state: "Maharashtra",
+  //   headline: "Asia's First Carbon Neutral Resort",
+  //   description: "We have created Asia's first carbon neutral resort by working with the prestigious eco-luxury retreat called The Machan, for the last four years — pioneering sustainable luxury tourism.",
+  //   backgroundImage: footprintLonavala,
+  // },
+  // {
+  //   name: "Coorg",
+  //   state: "Karnataka",
+  //   headline: "Comprehensive Emissions Tracking",
+  //   description: "We are working with one of India's most admired resorts, The Tamara Coorg — by helping them accurately track and measure their emissions across Scope 1, 2 and 3, with reduction and sequestration strategies being developed.",
+  //   backgroundImage: footprintCoorg,
+  // },
 ];
 
 const Index = () => {
