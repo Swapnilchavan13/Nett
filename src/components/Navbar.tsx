@@ -62,7 +62,7 @@ const Navbar = () => {
                      {/* </span> */}
      <div className="flex flex-col items-center text-center gap-3">
   <img
-    src="https://nettzero.world/wp-content/uploads/2024/02/cropped-ce2055_a34cf15bcb3c4c4b9851a279e2de0f4cmv2-Photoroom.webp"
+    src="https://iili.io/fOAcFsf.jpg"
     alt="NettZero Logo"
     className="w-40 h-auto object-contain rounded-lg opacity-90 transition-opacity duration-300 group-hover:opacity-100"
   />
