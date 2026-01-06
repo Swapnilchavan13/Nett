@@ -6,8 +6,10 @@ import SectionDivider from "@/components/SectionDivider";
 import GallerySection from "@/components/GallerySection";
 import StatsSection from "@/components/StatsSection";
 import PartnersSection from "@/components/PartnersSection";
+import PartnersLogoScroller from "@/components/PartnersLogoScroller";
 import FootprintSection from "@/components/FootprintSection";
 import TeamSection from "@/components/TeamSection";
+import FarmersNetworkSection from "@/components/FarmersNetworkSection";
 import ContactSection from "@/components/ContactSection";
 import NettZeroForYou from "@/components/NettZeroForYou";
 
@@ -41,15 +43,23 @@ import sectionDac from "@/assets/section-dac.jpg";
 import sectionPartners from "@/assets/section-partners.jpg";
 import sectionStandards from "@/assets/section-standards.jpg";
 
+// Product logos
+import logoClimeScore from "@/assets/logo-climescore.png";
+import logoClimeGrove from "@/assets/logo-climegrove.png";
+import logoClimeFolio from "@/assets/logo-climefolio.png";
+import logoClimeStore from "@/assets/logo-climestore.png";
+import logoClimeSchool from "@/assets/logo-climeschool.png";
+
 // Footprint images
 import footprintNubra from "@/assets/footprint-nubra.jpg";
 import footprintRajgarh from "@/assets/footprint-rajgarh.jpg";
 import footprintPuranpur from "@/assets/footprint-puranpur.jpg";
-import footprintMandawa from "@/assets/footprint-mandawa.jpg";
 import footprintBandhavgarh from "@/assets/footprint-bandhavgarh.jpg";
 import footprintDamoh from "@/assets/footprint-damoh.jpg";
-import footprintLonavala from "@/assets/footprint-lonavala.jpg";
-import footprintCoorg from "@/assets/footprint-coorg.jpg";
+
+//Section Video
+
+import co22 from "@/assets/co22.mp4";
 
 const carouselItems = [
   { name: "ClimeScore", image: carouselClimeScore, tagline: "Measure your carbon footprint" },
@@ -67,21 +77,37 @@ const nettZeroSuiteSections = {
       headline: "Know Your Carbon Footprint",
       description: "Accurately quantify your organization's greenhouse gas emissions across Scope 1, 2, and 3. Our comprehensive AI powered measurement tools provide granular insights into your environmental impact. Trusted by industry leaders since 2021.",
       backgroundImage: sectionMeasure,
-      btn:'See The Demo Video'
+      btn:'See The Demo Video',
+      logoImage: logoClimeScore,
+     act: {
+  type: "video",
+  value: co22 // video url or id
+}
     },
     {
       title: "Reduce",
       headline: "Cut Emissions at Source",
       description: "Implement data-driven strategies to minimize your carbon output. From energy efficiency to process optimization, we identify the highest-impact reduction opportunities. Powered by AI trained to detect target based reduction.",
       backgroundImage: sectionReduce,
-      btn:'Get In Touch'
+      btn:'Get In Touch',
+      logoImage: logoClimeScore,
+      act: {
+   type: "link",
+  value: "https://example.com"
+}
+
     },
     {
       title: "Offset",
       headline: "Balance What Remains",
       description: "Neutralize unavoidable emissions through verified carbon offset projects. Support reforestation, renewable energy, and community initiatives that deliver real climate impact Curated by a panel of experts",
       backgroundImage: sectionOffset,
-      btn:'Buy High Integrity Credits'
+      btn:'Buy High Integrity Credits',
+      logoImage: logoClimeScore,
+      act: {
+  type: "link",
+  value: "https://example.com"
+}
     },
   ],
   manageCarbonCredits: [
@@ -90,21 +116,36 @@ const nettZeroSuiteSections = {
       headline: "Create Carbon Assets",
       description: "Transform sustainable practices into certified carbon credits. Our development team guides you through project design, validation, and registration with leading standards.",
       backgroundImage: sectionDevelop,
-      btn:'View Our Carbon Credit Projects'
+      btn:'View Our Carbon Credit Projects',
+      logoImage: logoClimeGrove,
+      act: {
+  type: "link",
+  value: "https://example.com"
+}
     },
     {
       title: "Purchase",
       headline: "Acquire Quality Credits",
       description: "Access a curated marketplace of verified carbon credits from diverse project types. Every credit is traceable, transparent, and aligned with your sustainability goals.",
       backgroundImage: sectionPurchase,
-      btn:'Get a Quote for Carbon Credits'
+      logoImage: logoClimeFolio,
+      btn:'Get a Quote for Carbon Credits',
+      act: {
+  type: "link",
+  value: "https://example.com"
+}
     },
     {
       title: "Invest",
       headline: "Grow Sustainable Wealth",
       description: "Build a portfolio of climate-positive investments. From green bonds to carbon credit funds, we help you align financial returns with environmental outcomes.",
       backgroundImage: sectionInvest,
-       btn:'Learn More'
+      logoImage: logoClimeGrove,
+      btn:'Learn More',
+      act: {
+  type: "link",
+  value: "https://example.com"
+}
     },
   ],
   sustainableMarketplace: [
@@ -113,21 +154,36 @@ const nettZeroSuiteSections = {
       headline: "Tackle Supply Chain Emissions",
       description: "Partner with verified sustainable suppliers to dramatically reduce your Scope 3 footprint. Our marketplace connects you with eco-conscious vendors across every category. Each one with a verified Carbon Emission Footprint",
       backgroundImage: sectionScope3,
-       btn:'Visit Our ClimeStore'
+      logoImage: logoClimeStore,
+      btn:'Visit Our ClimeStore',
+      act: {
+  type: "link",
+  value: "https://example.com"
+}
     },
     {
       title: "Support Green Businesses",
       headline: "Amplify Sustainable Commerce",
       description: "Every purchase powers the green economy. Discover and support businesses that share your commitment to environmental stewardship and responsible practices. Without any price premium",
       backgroundImage: sectionGreenBiz,
-       btn:'See Our Partners'
+      logoImage: logoClimeStore,
+       btn:'See Our Partners',
+      act: {
+  type: "link",
+  value: "https://example.com"
+}
     },
     {
       title: "Work with Verified Vendors",
       headline: "Trust Through Transparency",
       description: "All marketplace vendors are rigorously vetted against sustainability standards. Build your supply chain with confidence knowing each partner meets strict environmental criteria.",
       backgroundImage: sectionVendors,
-       btn:'See Our Selection Process'
+      logoImage: logoClimeStore,
+       btn:'See Our Selection Process',
+      act: {
+  type: "link",
+  value: "https://example.com"
+}
     },
   ],
   climateLiteracy: [
@@ -136,44 +192,51 @@ const nettZeroSuiteSections = {
       headline: "Executive Climate Fluency",
       description: "Equip your leadership team with the knowledge to drive strategic sustainability decisions. Our executive programs cover ESG integration, climate risk, and stakeholder communication.",
       backgroundImage: sectionLeaders,
-       btn:'Visit ClimeSchool'
+       btn:'Visit ClimeSchool',
+       logoImage: logoClimeSchool,
+       act: {
+  type: "link",
+  value: "https://example.com"
+}
     },
     {
       title: "Train Your Faculty",
       headline: "Academic Excellence in Sustainability",
       description: "Empower educators to inspire the next generation of climate leaders. Our faculty development programs integrate cutting-edge climate science into curricula across disciplines.",
       backgroundImage: sectionFaculty,
-      btn: 'See Our Curriculum'
+      logoImage: logoClimeSchool,
+      btn: 'See Our Curriculum',
+      act: {
+  type: "link",
+  value: "https://example.com"
+}
     },
     {
       title: "Join Our Online Programs",
       headline: "Learn at Your Own Pace",
       description: "Access world-class climate education from anywhere. Our online courses combine expert instruction, interactive modules, and real-world case studies for maximum impact.",
       backgroundImage: sectionOnline,
-      btn: 'Check Our Online Programs'
+      logoImage: logoClimeSchool,
+      btn: 'Check Our Online Programs',
+      act: {
+  type: "link",
+  value: "https://example.com"
+}
     },
   ],
 };
 
 // Section 2: The NettZero Gallery (same projects as footprint with map coordinates)
 const galleryData = [
-  {
-    name: "Nubra Valley",
-    state: "Ladakh",
-    headline: "Ladakh's First Carbon Neutral Resort",
-    description: "We have created Ladakh's first carbon neutral resort called Stone Hedge, setting a new benchmark for sustainable hospitality in one of the world's most pristine mountain landscapes.",
-    backgroundImage: footprintNubra,
-    mapX: 270,
-    mapY: 45,
-  },
+
   {
     name: "Rajgarh",
     state: "Himachal Pradesh",
     headline: "Biochar from Orchard Prunings",
     description: "We are creating biochar using orchard prunings from over 100,000 trees — which were earlier getting burnt — transforming agricultural waste into a powerful carbon sequestration tool.",
     backgroundImage: footprintRajgarh,
-    mapX: 255,
-    mapY: 95,
+    mapX: 185,
+    mapY: 130,
   },
   {
     name: "Puranpur",
@@ -181,26 +244,18 @@ const galleryData = [
     headline: "Protecting Air Quality Through Biochar",
     description: "We are creating biochar using rice-straw from over 5,000 farmers — directly preventing hundreds of tons of PM2.5 from affecting the AQI and improving regional air quality.",
     backgroundImage: footprintPuranpur,
-    mapX: 310,
-    mapY: 160,
+    mapX: 270,
+    mapY: 240,
   },
-  {
-    name: "Mandawa",
-    state: "Rajasthan",
-    headline: "Rajasthan's First Carbon Neutral Resort",
-    description: "We have created Rajasthan's first carbon neutral resort — the legacy Mandawa — by measuring & reporting emissions for the past 4 years, setting a sustainability standard for heritage tourism.",
-    backgroundImage: footprintMandawa,
-    mapX: 230,
-    mapY: 160,
-  },
+
   {
     name: "Bandhavgarh",
     state: "Madhya Pradesh",
     headline: "Invasive Species to Biochar",
     description: "We are converting invasive species and rice straw into biochar for the last 2 years. We've covered nearly 10,000 farmers and prevented over 200,000 kgs of rice straw from being burnt.",
     backgroundImage: footprintBandhavgarh,
-    mapX: 320,
-    mapY: 230,
+    mapX: 250,
+    mapY: 325,
   },
   {
     name: "Damoh",
@@ -208,27 +263,10 @@ const galleryData = [
     headline: "Farmer Cooperative Impact",
     description: "We are converting rice straw into biochar and working with a cooperative of over 20,000 farmers. This year, we will prevent 300,000 kgs of rice straw from being burnt.",
     backgroundImage: footprintDamoh,
-    mapX: 295,
-    mapY: 245,
-  },
-  {
-    name: "Lonavala",
-    state: "Maharashtra",
-    headline: "Asia's First Carbon Neutral Resort",
-    description: "We have created Asia's first carbon neutral resort by working with the prestigious eco-luxury retreat called The Machan, for the last four years — pioneering sustainable luxury tourism.",
-    backgroundImage: footprintLonavala,
-    mapX: 215,
+    mapX: 220,
     mapY: 320,
   },
-  {
-    name: "Coorg",
-    state: "Karnataka",
-    headline: "Comprehensive Emissions Tracking",
-    description: "We are working with one of India's most admired resorts, The Tamara Coorg — by helping them accurately track and measure their emissions across Scope 1, 2 and 3, with reduction and sequestration strategies being developed.",
-    backgroundImage: footprintCoorg,
-    mapX: 235,
-    mapY: 420,
-  },
+
 ];
 
 // Section 3: NettZero in Numbers
@@ -335,13 +373,7 @@ const partnersData = {
 
 // Section 5: NettZero Footprint
 const footprintData = [
-  // {
-  //   name: "Nubra Valley",
-  //   state: "Ladakh",
-  //   headline: "Ladakh's First Carbon Neutral Resort",
-  //   description: "We have created Ladakh's first carbon neutral resort called Stone Hedge, setting a new benchmark for sustainable hospitality in one of the world's most pristine mountain landscapes.",
-  //   backgroundImage: footprintNubra,
-  // },
+,
   {
     name: "Rajgarh",
     state: "Himachal Pradesh",
@@ -358,13 +390,7 @@ const footprintData = [
     backgroundImage: footprintPuranpur,
      map:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSetx4q1A7t0K-nWlc3w4ceVpd75Yk8Q43JbQ&s"
   },
-  // {
-  //   name: "Mandawa",
-  //   state: "Rajasthan",
-  //   headline: "Rajasthan's First Carbon Neutral Resort",
-  //   description: "We have created Rajasthan's first carbon neutral resort — the legacy Mandawa — by measuring & reporting emissions for the past 4 years, setting a sustainability standard for heritage tourism.",
-  //   backgroundImage: footprintMandawa,
-  // },
+
   {
     name: "Bandhavgarh",
     state: "Madhya Pradesh",
@@ -381,20 +407,7 @@ const footprintData = [
     backgroundImage: footprintDamoh,
     
   },
-  // {
-  //   name: "Lonavala",
-  //   state: "Maharashtra",
-  //   headline: "Asia's First Carbon Neutral Resort",
-  //   description: "We have created Asia's first carbon neutral resort by working with the prestigious eco-luxury retreat called The Machan, for the last four years — pioneering sustainable luxury tourism.",
-  //   backgroundImage: footprintLonavala,
-  // },
-  // {
-  //   name: "Coorg",
-  //   state: "Karnataka",
-  //   headline: "Comprehensive Emissions Tracking",
-  //   description: "We are working with one of India's most admired resorts, The Tamara Coorg — by helping them accurately track and measure their emissions across Scope 1, 2 and 3, with reduction and sequestration strategies being developed.",
-  //   backgroundImage: footprintCoorg,
-  // },
+ 
 ];
 
 const Index = () => {
@@ -521,6 +534,9 @@ const Index = () => {
           />
         </div>
 
+          {/* Partners Logo Scroller */}
+        <PartnersLogoScroller />
+
         {/* Customers */}
         {partnersData.customers.map((partner, index) => (
           <PartnersSection
@@ -574,6 +590,9 @@ const Index = () => {
 
         {/* Section 6: Team NettZero */}
         <TeamSection />
+
+        {/* Farmers Network Highlight */}
+        <FarmersNetworkSection />
 
         {/* Section 7: NettZero for You */}
         <div id="for-you">

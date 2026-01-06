@@ -51,7 +51,7 @@ const LeaderCarousel = ({ items }: LeaderCarouselProps) => {
           transition={{ delay: 0.5 }}
         >
           <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
-          <span className="text-primary text-sm font-medium tracking-[0.3em] uppercase">NettZero</span>
+          <span className="text-primary text-sm font-medium tracking-[0.3em] uppercase">Welcome To</span>
           <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
         </motion.div>
 
@@ -60,7 +60,7 @@ const LeaderCarousel = ({ items }: LeaderCarouselProps) => {
         </h1>
         
         <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">
-          5 Distinct Products. 1 Unified Vision. Carbon Dioxide Removal.
+          5 Distinct Products. 1 Unified Vision. <span className="text-gradient">Carbon Dioxide Removal.</span>
         </p>
       </motion.div>
 
