@@ -331,13 +331,12 @@ const statsData = {
   ],
 };
 
-// Section 4: Partners
 // Section 4: Partners with Testimonials
 const partnersData = {
   customers: [
     {
-      name: "Enterprise Clients",
-      description: "Fortune 500 companies and industry leaders trust NettZero to guide their sustainability journey, from initial assessment to net-zero achievement.",
+      name: "Hospitality Leaders",
+      description: "India’s leading Sustainable Hospitality organisations trust ClimeScore to measure and report their Carbon Emissions. From The Machan to The Tamara - they bank on our platform.",
       backgroundImage: sectionPartners,
       testimonial: {
         quote: "NettZero transformed how we approach sustainability. Their comprehensive platform helped us achieve our carbon goals 2 years ahead of schedule.",
@@ -346,8 +345,8 @@ const partnersData = {
       },
     },
     {
-      name: "SME Partners",
-      description: "Small and medium enterprises access enterprise-grade sustainability tools tailored to their scale, enabling climate action at every business size.",
+      name: "Academic Institutions",
+      description: "ClimeScore is deployed at the finest & most reputed academic campuses across the country to measure their emissions - resulting in an impact through over 75,000 students & faculty.",
       backgroundImage: sectionGreenBiz,
       testimonial: {
         quote: "As a mid-sized manufacturer, we thought net-zero was out of reach. NettZero made it accessible and affordable for our business.",
@@ -359,7 +358,7 @@ const partnersData = {
   partners: [
     {
       name: "Technology Partners",
-      description: "Collaborating with leading tech companies to integrate climate data into business intelligence platforms and enterprise resource planning systems.",
+      description: "We work with some of the most robust, reliable and renowned players that provide technology to CDR Carbon Credit Developers. From dMRV providers with over 25 installations, to pyrolisis plant makers that are patent pending and recognised by registries such as Isometric to auditors like CERES - our standards are at par with the best in the world of Carbon Credits & Carbon Management.",
       backgroundImage: sectionPurchase,
       testimonial: {
         quote: "The integration with our existing systems was seamless. NettZero's API-first approach made implementation a breeze.",
@@ -369,7 +368,7 @@ const partnersData = {
     },
     {
       name: "Implementation Partners",
-      description: "A global network of certified consultants and implementation specialists ensuring seamless deployment of NettZero solutions across regions.",
+      description: "ClimeGrove works with over 15,000 farmers through a network of NABARD aligned NGO’s and local agencies with years of experience in farmer management. All biomass management & fertiliser distribution is done on the back of this network - ensuring crucial last mile solidity in implementation.",
       backgroundImage: sectionLeaders,
       testimonial: {
         quote: "Training our consultants on NettZero's platform was intuitive. Our clients now have access to world-class climate solutions.",
@@ -381,7 +380,7 @@ const partnersData = {
   standards: [
     {
       name: "Certification Bodies",
-      description: "Aligned with ISO 14001, GHG Protocol, Verra, Gold Standard, and other leading frameworks ensuring our methodologies meet the highest global standards.",
+      description: "ClimeScore is developed along the rigorous factors and guidelines contained within the GHG Protocol, DEFRA, IPCC and ISO 14068. ClimeGrove CDR programs are built to generate credits as per the stringent standards of Carbon Standards International, Puro and Isometric, amongst others.",
       backgroundImage: sectionStandards,
       testimonial: {
         quote: "NettZero's rigorous adherence to international standards sets a benchmark for the industry. Truly commendable methodology.",
@@ -391,7 +390,7 @@ const partnersData = {
     },
     {
       name: "Research Institutions",
-      description: "Partnering with universities and research centers to advance climate science and develop innovative carbon removal technologies.",
+      description: "Partnering with universities and research centers to advance climate science and develop innovative carbon removal technologies. We are aligned with the prestigious Symbiosis College, Pune and The Institute of Chemical Technology, Mumbai - for developing research on biomass burning and Direct Air Capture nana-catalysts, respectively.",
       backgroundImage: sectionFaculty,
       testimonial: {
         quote: "Our collaboration with NettZero has accelerated our biochar research significantly. Real-world data meets academic rigor.",
@@ -412,7 +411,8 @@ const footprintData = [
     headline: "Biochar from Orchard Prunings",
     description: "We are creating biochar using orchard prunings from over 100,000 trees — which were earlier getting burnt — transforming agricultural waste into a powerful carbon sequestration tool.",
     backgroundImage: footprintRajgarh,
-    map:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSetx4q1A7t0K-nWlc3w4ceVpd75Yk8Q43JbQ&s"
+    mapX: 185,
+    mapY: 130,
   },
   {
     name: "Puranpur",
@@ -420,7 +420,8 @@ const footprintData = [
     headline: "Protecting Air Quality Through Biochar",
     description: "We are creating biochar using rice-straw from over 5,000 farmers — directly preventing hundreds of tons of PM2.5 from affecting the AQI and improving regional air quality.",
     backgroundImage: footprintPuranpur,
-     map:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSetx4q1A7t0K-nWlc3w4ceVpd75Yk8Q43JbQ&s"
+    mapX: 270,
+    mapY: 240,
   },
 
   {
@@ -429,7 +430,8 @@ const footprintData = [
     headline: "Invasive Species to Biochar",
     description: "We are converting invasive species and rice straw into biochar for the last 2 years. We've covered nearly 10,000 farmers and prevented over 200,000 kgs of rice straw from being burnt.",
     backgroundImage: footprintBandhavgarh,
-     map:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSetx4q1A7t0K-nWlc3w4ceVpd75Yk8Q43JbQ&s"
+    mapX: 250,
+    mapY: 325,
   },
   {
     name: "Damoh",
@@ -437,6 +439,8 @@ const footprintData = [
     headline: "Farmer Cooperative Impact",
     description: "We are converting rice straw into biochar and working with a cooperative of over 20,000 farmers. This year, we will prevent 300,000 kgs of rice straw from being burnt.",
     backgroundImage: footprintDamoh,
+    mapX: 220,
+    mapY: 320,
     
   },
  

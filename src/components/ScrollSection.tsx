@@ -159,7 +159,7 @@ const [videoUrl, setVideoUrl] = useState<string | null>(null);
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <div className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
-            <span onClick={handleAction} className="text-[10px] sm:text-xs text-muted-foreground tracking-wider">{btn}</span>
+            <span onClick={handleAction} className="cursor-pointer text-[10px] sm:text-xs text-muted-foreground tracking-wider">{btn}</span>
 
 
             

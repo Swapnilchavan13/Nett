@@ -47,7 +47,7 @@ const IndiaMap = ({ locationX, locationY, isInView }: IndiaMapProps) => {
                 cy={locationY}
                 r="20"
                 fill="none"
-                stroke="hsl(142 76% 45%)"
+                stroke="hsla(0, 75%, 47%, 1.00)"
                 strokeWidth="2"
                 initial={{ opacity: 0.8, scale: 1 }}
                 animate={{ opacity: 0, scale: 2.5 }}
@@ -59,13 +59,13 @@ const IndiaMap = ({ locationX, locationY, isInView }: IndiaMapProps) => {
                 cx={locationX}
                 cy={locationY}
                 r="10"
-                fill="hsl(142 76% 45%)"
+                fill="hsla(0, 72%, 48%, 1.00)"
               />
               <circle
                 cx={locationX}
                 cy={locationY}
                 r="4"
-                fill="hsl(0 0% 2%)"
+                fill="hsla(357, 93%, 59%, 1.00)"
               />
             </motion.g>
           </svg>
