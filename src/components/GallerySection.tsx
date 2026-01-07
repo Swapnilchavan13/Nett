@@ -13,7 +13,9 @@ interface GalleryProject {
   backgroundImage: string;
   mapX: number;
   mapY: number;
+  images: string[]; // 👈 ADD THIS
 }
+
 
 interface GallerySectionProps {
   project: GalleryProject;
@@ -28,11 +30,13 @@ const GallerySection = ({ project, index, position = "left" }: GallerySectionPro
 
   return (
     <>
-      <GalleryImageDialog
-        isOpen={isDialogOpen}
-        onClose={() => setIsDialogOpen(false)}
-        projectName={project.name}
-      />
+     <GalleryImageDialog
+  isOpen={isDialogOpen}
+  onClose={() => setIsDialogOpen(false)}
+  projectName={project.name}
+  images={project.images} // 👈 PASS IMAGES
+/>
+
     <section ref={ref} className="section-panel">
       {/* Background */}
       <motion.div

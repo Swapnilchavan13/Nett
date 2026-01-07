@@ -12,11 +12,16 @@ const logos = [
 "https://iili.io/famRRHX.jpg",
 "https://iili.io/famRYDG.jpg",
   "https://iili.io/famKCrv.jpg",
-  "https://iili.io/KrXtLjs.jpg",
-  "https://iili.io/KQeFxnI.jpg",
-  "https://iili.io/KrXuvIe.jpg",
-  "https://iili.io/KrXu8hu.jpg",
+
+'https://iili.io/fTzwHJe.jpg',
+'https://iili.io/fTzAXiQ.jpg',
+'https://iili.io/fTzAWWx.jpg',
+'https://iili.io/fTzAGDb.jpg',
+'https://iili.io/fTzAEOu.jpg',
+'https://iili.io/fTzA1Re.jpg',
+'https://iili.io/fTzA0J9.jpg'
 ];
+
 
 // Duplicate for seamless infinite scroll
 const duplicatedLogos = [...logos, ...logos];

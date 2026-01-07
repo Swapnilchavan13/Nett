@@ -77,7 +77,7 @@ const nettZeroSuiteSections = {
       headline: "Know Your Carbon Footprint",
       description: "Accurately quantify your organization's greenhouse gas emissions across Scope 1, 2, and 3. Our comprehensive AI powered measurement tools provide granular insights into your environmental impact. Trusted by industry leaders since 2021.",
       backgroundImage: sectionMeasure,
-      btn:'See The Demo Video',
+      btn:'Over 300,000 tCO₂e measured',
       logoImage: logoClimeScore,
      act: {
   type: "video",
@@ -89,7 +89,7 @@ const nettZeroSuiteSections = {
       headline: "Cut Emissions at Source",
       description: "Implement data-driven strategies to minimize your carbon output. From energy efficiency to process optimization, we identify the highest-impact reduction opportunities. Powered by AI trained to detect target based reduction.",
       backgroundImage: sectionReduce,
-      btn:'Get In Touch',
+      btn:'16 GRI standard reports published',
       logoImage: logoClimeScore,
       act: {
    type: "link",
@@ -102,7 +102,7 @@ const nettZeroSuiteSections = {
       headline: "Balance What Remains",
       description: "Neutralize unavoidable emissions through verified carbon offset projects. Support reforestation, renewable energy, and community initiatives that deliver real climate impact Curated by a panel of experts",
       backgroundImage: sectionOffset,
-      btn:'Buy High Integrity Credits',
+      btn:'18,000 carbon credits transacted',
       logoImage: logoClimeScore,
       act: {
   type: "link",
@@ -116,7 +116,7 @@ const nettZeroSuiteSections = {
       headline: "Create Carbon Assets",
       description: "Transform sustainable practices into certified carbon credits. Our development team guides you through project design, validation, and registration with leading standards.",
       backgroundImage: sectionDevelop,
-      btn:'View Our Carbon Credit Projects',
+      btn:'6 projects live across India',
       logoImage: logoClimeGrove,
       act: {
   type: "link",
@@ -129,7 +129,7 @@ const nettZeroSuiteSections = {
       description: "Access a curated marketplace of verified carbon credits from diverse project types. Every credit is traceable, transparent, and aligned with your sustainability goals.",
       backgroundImage: sectionPurchase,
       logoImage: logoClimeFolio,
-      btn:'Get a Quote for Carbon Credits',
+      btn:'Over 50,000 tCO₂e credits under management',
       act: {
   type: "link",
   value: "https://example.com"
@@ -141,7 +141,7 @@ const nettZeroSuiteSections = {
       description: "Build a portfolio of climate-positive investments. From green bonds to carbon credit funds, we help you align financial returns with environmental outcomes.",
       backgroundImage: sectionInvest,
       logoImage: logoClimeGrove,
-      btn:'Learn More',
+      btn:'12 CDR projects under planning',
       act: {
   type: "link",
   value: "https://example.com"
@@ -155,7 +155,7 @@ const nettZeroSuiteSections = {
       description: "Partner with verified sustainable suppliers to dramatically reduce your Scope 3 footprint. Our marketplace connects you with eco-conscious vendors across every category. Each one with a verified Carbon Emission Footprint",
       backgroundImage: sectionScope3,
       logoImage: logoClimeStore,
-      btn:'Visit Our ClimeStore',
+      btn:'200+ green vendors on-boarded',
       act: {
   type: "link",
   value: "https://example.com"
@@ -167,7 +167,7 @@ const nettZeroSuiteSections = {
       description: "Every purchase powers the green economy. Discover and support businesses that share your commitment to environmental stewardship and responsible practices. Without any price premium",
       backgroundImage: sectionGreenBiz,
       logoImage: logoClimeStore,
-       btn:'See Our Partners',
+       btn:'36 start-ups on-boarded',
       act: {
   type: "link",
   value: "https://example.com"
@@ -179,7 +179,7 @@ const nettZeroSuiteSections = {
       description: "All marketplace vendors are rigorously vetted against sustainability standards. Build your supply chain with confidence knowing each partner meets strict environmental criteria.",
       backgroundImage: sectionVendors,
       logoImage: logoClimeStore,
-       btn:'See Our Selection Process',
+       btn:'4 proprietary carbon neutral projections',
       act: {
   type: "link",
   value: "https://example.com"
@@ -192,7 +192,7 @@ const nettZeroSuiteSections = {
       headline: "Executive Climate Fluency",
       description: "Equip your leadership team with the knowledge to drive strategic sustainability decisions. Our executive programs cover ESG integration, climate risk, and stakeholder communication.",
       backgroundImage: sectionLeaders,
-       btn:'Visit ClimeSchool',
+       btn:'Over 25,000 person hours of training delivered',
        logoImage: logoClimeSchool,
        act: {
   type: "link",
@@ -205,7 +205,7 @@ const nettZeroSuiteSections = {
       description: "Empower educators to inspire the next generation of climate leaders. Our faculty development programs integrate cutting-edge climate science into curricula across disciplines.",
       backgroundImage: sectionFaculty,
       logoImage: logoClimeSchool,
-      btn: 'See Our Curriculum',
+      btn: '12 academic institutions oriented',
       act: {
   type: "link",
   value: "https://example.com"
@@ -217,7 +217,7 @@ const nettZeroSuiteSections = {
       description: "Access world-class climate education from anywhere. Our online courses combine expert instruction, interactive modules, and real-world case studies for maximum impact.",
       backgroundImage: sectionOnline,
       logoImage: logoClimeSchool,
-      btn: 'Check Our Online Programs',
+      btn: '6 models with SGM certification',
       act: {
   type: "link",
   value: "https://example.com"
@@ -237,6 +237,14 @@ const galleryData = [
     backgroundImage: footprintRajgarh,
     mapX: 185,
     mapY: 130,
+    images: [
+      'https://iili.io/fOZpEdb.png',
+'https://iili.io/fOZpl1e.png',
+'https://iili.io/fOZpYL7.png',
+'https://iili.io/fOZpqXI.png',
+'https://iili.io/fOZpfzN.png',
+'https://iili.io/fOZwmYv.jpg'
+    ],
   },
   {
     name: "Puranpur",
@@ -246,6 +254,14 @@ const galleryData = [
     backgroundImage: footprintPuranpur,
     mapX: 270,
     mapY: 240,
+     images: [
+      'https://iili.io/fOZpxgs.png',
+'https://iili.io/fOZpnqX.png',
+'https://iili.io/fOZwt4a.jpg',
+'https://iili.io/fOZaVt4.jpg',
+'https://iili.io/fOZaGAG.jpg',
+'https://iili.io/fOZaE9s.jpg'
+    ],
   },
 
   {
@@ -256,6 +272,14 @@ const galleryData = [
     backgroundImage: footprintBandhavgarh,
     mapX: 250,
     mapY: 325,
+     images: [
+      'https://iili.io/fOZpEdb.png',
+'https://iili.io/fOZpl1e.png',
+'https://iili.io/fOZpYL7.png',
+'https://iili.io/fOZpqXI.png',
+'https://iili.io/fOZpfzN.png',
+'https://iili.io/fOZwmYv.jpg'
+    ],
   },
   {
     name: "Damoh",
@@ -265,6 +289,14 @@ const galleryData = [
     backgroundImage: footprintDamoh,
     mapX: 220,
     mapY: 320,
+     images: [
+      'https://iili.io/fOZpl1e.png',
+'https://iili.io/fOZaVt4.jpg',
+'https://iili.io/fOZauwv.jpg',
+'https://iili.io/fOZaFZQ.jpg',
+'https://iili.io/fOZaH8u.jpg',
+'https://iili.io/fOZYyF9.jpg'
+    ],
   },
 
 ];

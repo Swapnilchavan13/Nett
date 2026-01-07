@@ -10,12 +10,16 @@ interface GalleryImageDialogProps {
   isOpen: boolean;
   onClose: () => void;
   projectName: string;
+  images: string[]; // 👈 ADD THIS
 }
 
-const GalleryImageDialog = ({ isOpen, onClose, projectName }: GalleryImageDialogProps) => {
-  // Placeholder images - replace with actual project images
-  const placeholderImages = [1, 2, 3, 4, 5, 6];
 
+const GalleryImageDialog = ({
+  isOpen,
+  onClose,
+  projectName,
+  images,
+}: GalleryImageDialogProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl bg-card border-border">
@@ -24,27 +28,31 @@ const GalleryImageDialog = ({ isOpen, onClose, projectName }: GalleryImageDialog
             {projectName} - Gallery
           </DialogTitle>
         </DialogHeader>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-          {placeholderImages.map((index) => (
+          {images.map((img, index) => (
             <div
               key={index}
-              className="aspect-video bg-secondary/50 rounded-lg border border-border flex items-center justify-center hover:border-primary/30 transition-colors cursor-pointer group"
+              className="aspect-video rounded-lg overflow-hidden border border-border hover:border-primary/30 transition-colors cursor-pointer"
             >
-              <div className="text-center">
-                <Image className="w-8 h-8 text-muted-foreground mx-auto mb-2 group-hover:text-primary transition-colors" />
-                <p className="text-xs text-muted-foreground">Image {index}</p>
-              </div>
+              <img
+                src={img}
+                alt={`${projectName} image ${index + 1}`}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
             </div>
           ))}
         </div>
 
-        <p className="text-sm text-muted-foreground text-center mt-4">
-          Additional project images will be displayed here
-        </p>
+        {images.length === 0 && (
+          <p className="text-sm text-muted-foreground text-center mt-4">
+            No images available for this gallery
+          </p>
+        )}
       </DialogContent>
     </Dialog>
   );
 };
+
 
 export default GalleryImageDialog;
