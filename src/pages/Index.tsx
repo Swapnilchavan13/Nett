@@ -332,44 +332,76 @@ const statsData = {
 };
 
 // Section 4: Partners
+// Section 4: Partners with Testimonials
 const partnersData = {
   customers: [
     {
-      name: "Hospitality Leaders from Enternprise Clients",
-      description: "India’s leading Sustainable Hospitality organisations trust ClimeScore to measure and report their Carbon Emissions. From The Machan to The Tamara - they bank on our platform.",
+      name: "Enterprise Clients",
+      description: "Fortune 500 companies and industry leaders trust NettZero to guide their sustainability journey, from initial assessment to net-zero achievement.",
       backgroundImage: sectionPartners,
+      testimonial: {
+        quote: "NettZero transformed how we approach sustainability. Their comprehensive platform helped us achieve our carbon goals 2 years ahead of schedule.",
+        name: "Priya Sharma",
+        company: "Tech Mahindra Ltd.",
+      },
     },
     {
-      name: "Academic Institutions",
-      description: "ClimeScore is deployed at the finest & most reputed academic campuses across the country to measure their emissions - resulting in an impact through over 75,000 students & faculty.",
+      name: "SME Partners",
+      description: "Small and medium enterprises access enterprise-grade sustainability tools tailored to their scale, enabling climate action at every business size.",
       backgroundImage: sectionGreenBiz,
+      testimonial: {
+        quote: "As a mid-sized manufacturer, we thought net-zero was out of reach. NettZero made it accessible and affordable for our business.",
+        name: "Vikram Patel",
+        company: "GreenTech Industries",
+      },
     },
   ],
   partners: [
     {
       name: "Technology Partners",
-      description: "We work with some of the most robust, reliable and renowned players that provide technology to CDR Carbon Credit Developers. From dMRV providers with over 25 installations, to pyrolisis plant makers that are patent pending and recognised by registries such as Isometric to auditors like CERES - our standards are at par with the best in the world of Carbon Credits & Carbon Management.",
+      description: "Collaborating with leading tech companies to integrate climate data into business intelligence platforms and enterprise resource planning systems.",
       backgroundImage: sectionPurchase,
+      testimonial: {
+        quote: "The integration with our existing systems was seamless. NettZero's API-first approach made implementation a breeze.",
+        name: "Ankit Mehta",
+        company: "DataSync Solutions",
+      },
     },
     {
       name: "Implementation Partners",
-      description: "ClimeGrove works with over 15,000 farmers through a network of NABARD aligned NGO’s and local agencies with years of experience in farmer management. All biomass management & fertiliser distribution is done on the back of this network - ensuring crucial last mile solidity in implementation.",
+      description: "A global network of certified consultants and implementation specialists ensuring seamless deployment of NettZero solutions across regions.",
       backgroundImage: sectionLeaders,
+      testimonial: {
+        quote: "Training our consultants on NettZero's platform was intuitive. Our clients now have access to world-class climate solutions.",
+        name: "Sunita Rao",
+        company: "EcoConsult Partners",
+      },
     },
   ],
   standards: [
     {
       name: "Certification Bodies",
-      description: "ClimeScore is developed along the rigorous factors and guidelines contained within the GHG Protocol, DEFRA, IPCC and ISO 14068. ClimeGrove CDR programs are built to generate credits as per the stringent standards of Carbon Standards International, Puro and Isometric, amongst others.",
+      description: "Aligned with ISO 14001, GHG Protocol, Verra, Gold Standard, and other leading frameworks ensuring our methodologies meet the highest global standards.",
       backgroundImage: sectionStandards,
+      testimonial: {
+        quote: "NettZero's rigorous adherence to international standards sets a benchmark for the industry. Truly commendable methodology.",
+        name: "Dr. Rajesh Kumar",
+        company: "Bureau Veritas India",
+      },
     },
     {
       name: "Research Institutions",
-      description: "Partnering with universities and research centers to advance climate science and develop innovative carbon removal technologies. We are aligned with the prestigious Symbiosis College, Pune and The Institute of Chemical Technology, Mumbai - for developing research on biomass burning and Direct Air Capture nana-catalysts, respectively.",
+      description: "Partnering with universities and research centers to advance climate science and develop innovative carbon removal technologies.",
       backgroundImage: sectionFaculty,
+      testimonial: {
+        quote: "Our collaboration with NettZero has accelerated our biochar research significantly. Real-world data meets academic rigor.",
+        name: "Prof. Meera Desai",
+        company: "IIT Bombay",
+      },
     },
   ],
 };
+
 
 // Section 5: NettZero Footprint
 const footprintData = [

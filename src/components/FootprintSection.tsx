@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { MapPin } from "lucide-react";
+import IndiaMap from "./IndiaMap";
 
 interface FootprintLocation {
   name: string;
@@ -8,6 +9,8 @@ interface FootprintLocation {
   headline: string;
   description: string;
   backgroundImage: string;
+  mapX?: number;
+  mapY?: number;
 }
 
 interface FootprintSectionProps {
@@ -45,57 +48,78 @@ const FootprintSection = ({ location, index, position = "left" }: FootprintSecti
           }}
           transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          {/* Location badge */}
-          <motion.div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 mb-6"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <MapPin className="w-4 h-4 text-primary" />
-            <span className="text-primary text-sm font-medium tracking-wider uppercase">{location.state}</span>
-          </motion.div>
+          <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-start">
+            {/* Left content */}
+            <div className="flex-1 w-full">
+              {/* Location badge */}
+              <motion.div
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 mb-6"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <MapPin className="w-4 h-4 text-primary" />
+                <span className="text-primary text-sm font-medium tracking-wider uppercase">{location.state}</span>
+              </motion.div>
 
-          {/* Location name */}
-          <motion.h2
-            className="heading-display text-4xl md:text-5xl text-foreground mb-3"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 30 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-          >
-            {location.name}
-          </motion.h2>
+              {/* Location name */}
+              <motion.h2
+                className="heading-display text-4xl md:text-5xl text-foreground mb-3"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 30 }}
+                transition={{ duration: 0.7, delay: 0.3 }}
+              >
+                {location.name}
+              </motion.h2>
 
-          {/* Headline */}
-          <motion.h3
-            className="text-xl md:text-2xl text-primary font-medium mb-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
-            transition={{ duration: 0.6, delay: 0.35 }}
-          >
-            {location.headline}
-          </motion.h3>
+              {/* Headline */}
+              <motion.h3
+                className="text-xl md:text-2xl text-primary font-medium mb-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
+                transition={{ duration: 0.6, delay: 0.35 }}
+              >
+                {location.headline}
+              </motion.h3>
 
-          {/* Description */}
-          <motion.p
-            className="text-muted-foreground text-lg leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            {location.description}
-          </motion.p>
+              {/* Description */}
+              <motion.p
+                className="text-muted-foreground text-lg leading-relaxed"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
+                {location.description}
+              </motion.p>
 
-          {/* Index indicator */}
-          <motion.div
-            className="mt-8 flex items-center gap-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: isInView ? 0.6 : 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-            <span className="text-4xl font-display font-bold text-primary/30">{String(index + 1).padStart(2, '0')}</span>
-            <div className="w-12 h-px bg-primary/30" />
-          </motion.div>
+              {/* Index indicator */}
+              <motion.div
+                className="mt-8 flex items-center gap-4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: isInView ? 0.6 : 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+              >
+                <span className="text-4xl font-display font-bold text-primary/30">{String(index + 1).padStart(2, '0')}</span>
+                <div className="w-12 h-px bg-primary/30" />
+              </motion.div>
+            </div>
+
+            {/* India Map with location pin */}
+            {location.mapX !== undefined && location.mapY !== undefined && (
+              <motion.div
+                className="flex-shrink-0 w-20 sm:w-28 md:w-32 lg:w-auto"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0.8 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+              >
+                <IndiaMap 
+                  locationX={location.mapX} 
+                  locationY={location.mapY} 
+                  isInView={isInView} 
+                />
+              </motion.div>
+            )}
+          </div>
         </motion.div>
       </div>
     </section>
