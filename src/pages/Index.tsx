@@ -54,8 +54,11 @@ import logoClimeSchool from "@/assets/logo-climeschool.png";
 import footprintNubra from "@/assets/footprint-nubra.jpg";
 import footprintRajgarh from "@/assets/footprint-rajgarh.jpg";
 import footprintPuranpur from "@/assets/footprint-puranpur.jpg";
+import footprintMandawa from "@/assets/footprint-mandawa.jpg";
 import footprintBandhavgarh from "@/assets/footprint-bandhavgarh.jpg";
 import footprintDamoh from "@/assets/footprint-damoh.jpg";
+import footprintLonavala from "@/assets/footprint-lonavala.jpg";
+import footprintCoorg from "@/assets/footprint-coorg.jpg";
 
 //Section Video
 
@@ -363,6 +366,8 @@ const statsData = {
   ],
 };
 
+
+
 // Section 4: Partners with Testimonials
 const partnersData = {
   customers: [
@@ -371,9 +376,9 @@ const partnersData = {
       description: "India’s leading Sustainable Hospitality organisations trust ClimeScore to measure and report their Carbon Emissions. From The Machan to The Tamara - they bank on our platform.",
       backgroundImage: sectionPartners,
       testimonial: {
-        quote: "NettZero transformed how we approach sustainability. Their comprehensive platform helped us achieve our carbon goals 2 years ahead of schedule.",
-        name: "Priya Sharma",
-        company: "Tech Mahindra Ltd.",
+        quote: "NettZero is a company founded with a shared vision to create a positive impact on the planet, one step at a time. Their commitment to emissions measurement and reporting is both rigorous and purpose-driven, making sustainability actionable for organizations of all sizes. The effort they put into their work is truly commendable, and I would strongly recommend their services to any company serious about reducing its environmental footprint.",
+        name: "Varun Hooja",
+        company: "Founder & Partner, Machan Resorts LLP",
       },
     },
     {
@@ -381,9 +386,9 @@ const partnersData = {
       description: "ClimeScore is deployed at the finest & most reputed academic campuses across the country to measure their emissions - resulting in an impact through over 75,000 students & faculty.",
       backgroundImage: sectionGreenBiz,
       testimonial: {
-        quote: "As a mid-sized manufacturer, we thought net-zero was out of reach. NettZero made it accessible and affordable for our business.",
-        name: "Vikram Patel",
-        company: "GreenTech Industries",
+        quote: "Working with NettZero transformed our approach to sustainability. Their insights on carbon accounting and project implementation were invaluable.",
+        name: "Ananya Mehta",
+        company: "CEO, GreenWatt Energy",
       },
     },
   ],
@@ -393,9 +398,9 @@ const partnersData = {
       description: "We work with some of the most robust, reliable and renowned players that provide technology to CDR Carbon Credit Developers. From dMRV providers with over 25 installations, to pyrolisis plant makers that are patent pending and recognised by registries such as Isometric to auditors like CERES - our standards are at par with the best in the world of Carbon Credits & Carbon Management.",
       backgroundImage: sectionPurchase,
       testimonial: {
-        quote: "The integration with our existing systems was seamless. NettZero's API-first approach made implementation a breeze.",
-        name: "Ankit Mehta",
-        company: "DataSync Solutions",
+        quote: "The team’s expertise and attention to detail make NettZero a trusted partner for any organization aiming to achieve real climate impact.",
+        name: "Rohit Sharma",
+        company: "Director, EcoBuild Solutions",
       },
     },
     {
@@ -403,10 +408,10 @@ const partnersData = {
       description: "ClimeGrove works with over 15,000 farmers through a network of NABARD aligned NGO’s and local agencies with years of experience in farmer management. All biomass management & fertiliser distribution is done on the back of this network - ensuring crucial last mile solidity in implementation.",
       backgroundImage: sectionLeaders,
       testimonial: {
-        quote: "Training our consultants on NettZero's platform was intuitive. Our clients now have access to world-class climate solutions.",
-        name: "Sunita Rao",
-        company: "EcoConsult Partners",
-      },
+        quote: "NettZero helped us measure and offset emissions across our operations. The process was smooth and the results were transparent.",
+        name: "Priya Desai",
+        company: "Sustainability Head, AgroPure Pvt Ltd",
+      }
     },
   ],
   standards: [
@@ -415,9 +420,9 @@ const partnersData = {
       description: "ClimeScore is developed along the rigorous factors and guidelines contained within the GHG Protocol, DEFRA, IPCC and ISO 14068. ClimeGrove CDR programs are built to generate credits as per the stringent standards of Carbon Standards International, Puro and Isometric, amongst others.",
       backgroundImage: sectionStandards,
       testimonial: {
-        quote: "NettZero's rigorous adherence to international standards sets a benchmark for the industry. Truly commendable methodology.",
-        name: "Dr. Rajesh Kumar",
-        company: "Bureau Veritas India",
+        quote: "Their technology-driven approach brings both accuracy and accountability to sustainability efforts. Highly recommended!",
+        name: "Aditya Rao",
+        company: "Managing Partner, EnviroEdge Consulting",
       },
     },
     {
@@ -425,9 +430,9 @@ const partnersData = {
       description: "Partnering with universities and research centers to advance climate science and develop innovative carbon removal technologies. We are aligned with the prestigious Symbiosis College, Pune and The Institute of Chemical Technology, Mumbai - for developing research on biomass burning and Direct Air Capture nana-catalysts, respectively.",
       backgroundImage: sectionFaculty,
       testimonial: {
-        quote: "Our collaboration with NettZero has accelerated our biochar research significantly. Real-world data meets academic rigor.",
-        name: "Prof. Meera Desai",
-        company: "IIT Bombay",
+        quote: "The NettZero team truly understands the balance between business goals and environmental responsibility.",
+        name: "Sneha Kapoor",
+        company: "Founder, Urban Roots Foundation",
       },
     },
   ],
@@ -436,7 +441,15 @@ const partnersData = {
 
 // Section 5: NettZero Footprint
 const footprintData = [
-,
+  {
+    name: "Nubra Valley",
+    state: "Ladakh",
+    headline: "Ladakh's First Carbon Neutral Resort",
+    description: "We have created Ladakh's first carbon neutral resort called Stone Hedge, setting a new benchmark for sustainable hospitality in one of the world's most pristine mountain landscapes.",
+    backgroundImage: footprintNubra,
+    mapX: 185,
+    mapY: 70,
+  },
   {
     name: "Rajgarh",
     state: "Himachal Pradesh",
@@ -455,14 +468,22 @@ const footprintData = [
     mapX: 270,
     mapY: 240,
   },
-
+  {
+    name: "Mandawa",
+    state: "Rajasthan",
+    headline: "Rajasthan's First Carbon Neutral Resort",
+    description: "We have created Rajasthan's first carbon neutral resort — the legacy Mandawa — by measuring & reporting emissions for the past 4 years, setting a sustainability standard for heritage tourism.",
+    backgroundImage: footprintMandawa,
+     mapX: 120,
+    mapY: 230,
+  },
   {
     name: "Bandhavgarh",
     state: "Madhya Pradesh",
     headline: "Invasive Species to Biochar",
     description: "We are converting invasive species and rice straw into biochar for the last 2 years. We've covered nearly 10,000 farmers and prevented over 200,000 kgs of rice straw from being burnt.",
     backgroundImage: footprintBandhavgarh,
-    mapX: 250,
+     mapX: 250,
     mapY: 325,
   },
   {
@@ -471,12 +492,29 @@ const footprintData = [
     headline: "Farmer Cooperative Impact",
     description: "We are converting rice straw into biochar and working with a cooperative of over 20,000 farmers. This year, we will prevent 300,000 kgs of rice straw from being burnt.",
     backgroundImage: footprintDamoh,
-    mapX: 220,
+     mapX: 220,
     mapY: 320,
-    
   },
- 
+  {
+    name: "Lonavala",
+    state: "Maharashtra",
+    headline: "Asia's First Carbon Neutral Resort",
+    description: "We have created Asia's first carbon neutral resort by working with the prestigious eco-luxury retreat called The Machan, for the last four years — pioneering sustainable luxury tourism.",
+    backgroundImage: footprintLonavala,
+     mapX: 120,
+    mapY: 440,
+  },
+  {
+    name: "Coorg",
+    state: "Karnataka",
+    headline: "Comprehensive Emissions Tracking",
+    description: "We are working with one of India's most admired resorts, The Tamara Coorg — by helping them accurately track and measure their emissions across Scope 1, 2 and 3, with reduction and sequestration strategies being developed.",
+    backgroundImage: footprintCoorg,
+     mapX: 160,
+    mapY: 550,
+  },
 ];
+
 
 const Index = () => {
   let globalIndex = 0;
