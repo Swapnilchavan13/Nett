@@ -276,9 +276,9 @@ const galleryData = [
     mapX: 250,
     mapY: 325,
      images: [
-      'https://iili.io/fOZpEdb.png',
+      'https://iili.io/fe5y8CB.jpg',
 'https://iili.io/fOZpl1e.png',
-'https://iili.io/fOZpYL7.png',
+'https://iili.io/fe5mnaa.jpg',
 'https://iili.io/fOZpqXI.png',
 'https://iili.io/fOZpfzN.png',
 'https://iili.io/fOZwmYv.jpg'
@@ -376,7 +376,7 @@ const partnersData = {
       description: "India’s leading Sustainable Hospitality organisations trust ClimeScore to measure and report their Carbon Emissions. From The Machan to The Tamara - they bank on our platform.",
       backgroundImage: sectionPartners,
       testimonial: {
-        quote: "NettZero is a company founded with a shared vision to create a positive impact on the planet, one step at a time. Their commitment to emissions measurement and reporting is both rigorous and purpose-driven, making sustainability actionable for organizations of all sizes. The effort they put into their work is truly commendable, and I would strongly recommend their services to any company serious about reducing its environmental footprint.",
+        quote: "NettZero is a company founded with a shared vision to create a positive impact on the planet, one step at a time. Their commitment to emissions measurement and reporting is both rigorous and purpose-driven, making sustainability actionable for organizations of all sizes.",
         name: "Varun Hooja",
         company: "Founder & Partner, Machan Resorts LLP",
       },
@@ -522,8 +522,8 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>ClimeScore by NettZero | Comprehensive Climate Action Platform</title>
-        <meta name="description" content="ClimeScore by NettZero - A comprehensive climate action platform for measuring, reducing, and offsetting carbon emissions. Join the sustainability journey." />
+        <title>NettZero | Comprehensive Climate Action Platform</title>
+        <meta name="description" content="NettZero - A comprehensive climate action platform for measuring, reducing, and offsetting carbon emissions. Join the sustainability journey." />
         <meta name="keywords" content="carbon footprint, climate action, sustainability, carbon credits, ESG, net zero, emissions measurement" />
         <link rel="canonical" href="https://nettzero.com" />
       </Helmet>

@@ -76,7 +76,7 @@ const [videoUrl, setVideoUrl] = useState<string | null>(null);
       {/* Floating Content Box */}
       <div className={`relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex ${position === "right" ? "justify-end" : "justify-start"}`}>
         <motion.div
-          className="content-box relative"
+          className="content-box relative min-h-[55vh] sm:min-h-[auto] p-6 sm:p-8 md:p-10"
           initial={{ 
             opacity: 0, 
             x: position === "left" ? -60 : 60 
@@ -123,7 +123,7 @@ const [videoUrl, setVideoUrl] = useState<string | null>(null);
 
           {/* Title */}
           <motion.h2 
-            className="heading-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-2 sm:mb-4"
+            className="heading-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-2 sm:mb-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 30 }}
             transition={{ duration: 0.7, delay: 0.4 }}
@@ -143,7 +143,7 @@ const [videoUrl, setVideoUrl] = useState<string | null>(null);
 
           {/* Description */}
           <motion.p 
-            className="text-muted-foreground text-sm sm:text-base md:text-lg leading-relaxed"
+            className="text-muted-foreground text-base sm:text-base md:text-lg leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -159,7 +159,7 @@ const [videoUrl, setVideoUrl] = useState<string | null>(null);
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <div className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
-            <span className="text-[10px] sm:text-xs text-muted-foreground tracking-wider">{btn}</span>
+            <span className="text-[12px] sm:text-xs text-muted-foreground tracking-wider">{btn}</span>
 
 
             
