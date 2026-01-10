@@ -293,12 +293,13 @@ const galleryData = [
     mapX: 220,
     mapY: 320,
      images: [
-      'https://iili.io/fOZpl1e.png',
-'https://iili.io/fOZaVt4.jpg',
-'https://iili.io/fOZauwv.jpg',
-'https://iili.io/fOZaFZQ.jpg',
-'https://iili.io/fOZaH8u.jpg',
-'https://iili.io/fOZYyF9.jpg'
+      'https://iili.io/fkEiUSj.jpg',
+'https://iili.io/fkEiScb.jpg',
+'https://iili.io/fkEikPe.jpg',
+'https://iili.io/fkEi8Ku.jpg',
+'https://iili.io/fkEirHx.jpg',
+'https://iili.io/fkEi4AQ.jpg',
+      
     ],
   },
 

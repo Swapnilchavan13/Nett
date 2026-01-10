@@ -15,7 +15,7 @@ const sections = [
 const productLinks = [
   { label: "ClimeScore", href: "#" },
   { label: "MicroOffsets", href: "#" },
-  { label: "ClimeGrove", href: "#" },
+  { label: "ClimeGrove", href: "https://www.climegrove.com" },
   { label: "ClimeSchool", href: "#" },
   { label: "ClimeStore", href: "#" },
   { label: "ClimeFolio", href: "#" },
@@ -88,25 +88,28 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Products Dropdown */}
-            <div className="hidden lg:flex items-center gap-4">
-              <div className="relative group">
-                <button className="px-4 py-2 text-sm font-medium text-foreground border border-primary/30 rounded-full hover:bg-primary/10 transition-colors flex items-center gap-2">
-                  Products
-                  <ExternalLink className="w-3 h-3" />
-                </button>
-                <div className="absolute top-full right-0 mt-2 w-48 py-2 bg-card/95 backdrop-blur-xl border border-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  {productLinks.map((link) => (
-                    <a
-                      key={link.label}
-                      href={link.href}
-                      className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-colors"
-                    >
-                      {link.label}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
+         <div className="hidden lg:flex items-center gap-4">
+  <div className="relative group">
+    <button className="px-4 py-2 text-sm font-medium text-foreground border border-primary/30 rounded-full hover:bg-primary/10 transition-colors flex items-center gap-2">
+      Products
+      <ExternalLink className="w-3 h-3" />
+    </button>
+
+    <div className="absolute top-full right-0 mt-2 w-48 py-2 bg-card/95 backdrop-blur-xl border border-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+      {productLinks.map((link) => (
+        <a
+          key={link.label}
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-colors"
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
 
             {/* Mobile Menu Button */}
             <button
