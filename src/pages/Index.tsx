@@ -276,10 +276,10 @@ const galleryData = [
     mapX: 250,
     mapY: 325,
      images: [
-      'https://iili.io/fe5y8CB.jpg',
-'https://iili.io/fOZpl1e.png',
-'https://iili.io/fe5mnaa.jpg',
-'https://iili.io/fOZpqXI.png',
+      'https://iili.io/fkMupja.jpg',
+'https://iili.io/fkMumTg.jpg',
+'https://iili.io/fkMuDyF.jpg',
+'https://iili.io/fkMuyZJ.png',
 'https://iili.io/fOZpfzN.png',
 'https://iili.io/fOZwmYv.jpg'
     ],
