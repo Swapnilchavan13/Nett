@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet";
 import Navbar from "@/components/Navbar";
 import LeaderCarousel from "@/components/LeaderCarousel";
-import ScrollSection from "@/components/ScrollSection";
 import SectionDivider from "@/components/SectionDivider";
 import GallerySection from "@/components/GallerySection";
 import StatsSection from "@/components/StatsSection";
@@ -63,6 +62,7 @@ import footprintCoorg from "@/assets/footprint-coorg.jpg";
 //Section Video
 
 import co22 from "@/assets/co22.mp4";
+import ScrollSection from "@/components/ScrollSection";
 
 const carouselItems = [
   { name: "ClimeScore", image: carouselClimeScore, tagline: "Measure your carbon footprint" },
