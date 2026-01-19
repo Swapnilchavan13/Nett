@@ -4,6 +4,7 @@ import sectionPartnersImg from "@/assets/section-partners.jpg";
 const logos = [
   "https://iili.io/famRxPp.jpg",
 "https://iili.io/famRIKN.jpg",
+"https://iili.io/fgxzsat.png",
 "https://iili.io/famRnov.jpg",
 "https://iili.io/famRoVR.jpg",
 "https://iili.io/famR5Rn.jpg",
@@ -12,6 +13,8 @@ const logos = [
 "https://iili.io/famRRHX.jpg",
 "https://iili.io/famRYDG.jpg",
   "https://iili.io/famKCrv.jpg",
+
+  "https://iili.io/fgxq0vf.png",
 
 'https://iili.io/fTzwHJe.jpg',
 'https://iili.io/fTzAXiQ.jpg',
