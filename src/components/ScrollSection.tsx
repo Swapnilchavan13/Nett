@@ -72,25 +72,39 @@ const [videoUrl, setVideoUrl] = useState<string | null>(null);
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/10 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/40" />
       </motion.div>
+{/* Floating Content Box */}
+<div
+  className={`relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex ${
+    position === "right" ? "justify-end" : "justify-start"
+  }`}
+>
+  <motion.div
+    className="
+      content-box
+      relative
+      min-h-[55vh] sm:min-h-[auto]
+      p-6 sm:p-8 md:p-10
+      rounded-2xl
+      bg-background/30
+      backdrop-blur-xl
+      border border-white/10
+      shadow-2xl
+    "
+    initial={{
+      opacity: 0,
+      x: position === "left" ? -60 : 60,
+    }}
+    animate={{
+      opacity: isInView ? 1 : 0,
+      x: isInView ? 0 : position === "left" ? -60 : 60,
+    }}
+    transition={{
+      duration: 0.8,
+      delay: 0.2,
+      ease: [0.25, 0.46, 0.45, 0.94],
+    }}
+  >
 
-      {/* Floating Content Box */}
-      <div className={`relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex ${position === "right" ? "justify-end" : "justify-start"}`}>
-        <motion.div
-          className="content-box relative min-h-[55vh] sm:min-h-[auto] p-6 sm:p-8 md:p-10"
-          initial={{ 
-            opacity: 0, 
-            x: position === "left" ? -60 : 60 
-          }}
-          animate={{ 
-            opacity: isInView ? 1 : 0,
-            x: isInView ? 0 : (position === "left" ? -60 : 60)
-          }}
-          transition={{ 
-            duration: 0.8, 
-            delay: 0.2,
-            ease: [0.25, 0.46, 0.45, 0.94]
-          }}
-        >
           {/* Section indicator */}
           <motion.div 
             className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6"

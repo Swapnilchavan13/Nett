@@ -44,22 +44,24 @@ const Navbar = () => {
   return (
     <>
       <motion.nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-background/90 backdrop-blur-xl border-b border-border/50"
-            : "bg-transparent"
-        }`}
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
+  className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
+    bg-white lg:bg-transparent
+    ${
+      isScrolled
+        ? "lg:bg-background/90 lg:backdrop-blur-xl lg:border-b lg:border-border/50"
+        : ""
+    }
+  `}
+  initial={{ y: -100 }}
+  animate={{ y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+>
+
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <a href="#" className="flex items-center gap-2 group">
-              {/* <span className="font-display text-xl md:text-2xl font-bold text-foreground"> */}
-                {/* Nett<span className="text-gradient">Zero</span> */}
-                     {/* </span> */}
+              
      <div className="flex flex-col items-center text-center gap-3">
   <img
     src="https://iili.io/fOAcFsf.jpg"
@@ -112,12 +114,17 @@ const Navbar = () => {
 </div>
 
             {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 text-foreground"
-            >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
+           <button
+  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+  className="lg:hidden p-2 text-black"
+>
+  {isMobileMenuOpen ? (
+    <X className="w-6 h-6" />
+  ) : (
+    <Menu className="w-6 h-6" />
+  )}
+</button>
+
           </div>
         </div>
       </motion.nav>
@@ -136,7 +143,7 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             />
             <motion.div
-              className="absolute top-16 left-0 right-0 bg-card border-b border-border p-6"
+  className="absolute top-16 left-0 right-0 bg-white border-b border-border p-6"
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
