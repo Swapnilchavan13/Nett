@@ -79,17 +79,18 @@ const PartnersLogoScroller = () => {
         >
           {duplicatedLogos.map((src, index) => (
             <div
-              key={index}
-              className="flex-shrink-0 w-40 sm:w-48 md:w-56 h-16 sm:h-20 md:h-24 flex items-center justify-center"
-            >
-              <div className="w-full h-full flex items-center justify-center rounded-lg bg-card/60 backdrop-blur-sm border border-primary/20 hover:border-primary/40 transition">
-                <img
-                  src={src}
-                  alt={`Partner logo ${index + 1}`}
-                  className="max-h-12 sm:max-h-14 md:max-h-20 w-auto object-contain opacity-90 hover:opacity-100 transition"
-                />
-              </div>
-            </div>
+  key={index}
+  className="flex-shrink-0 w-52 sm:w-48 md:w-56 h-20 sm:h-20 md:h-24 flex items-center justify-center"
+>
+  <div className="w-full h-full flex items-center justify-center rounded-lg bg-card/60 backdrop-blur-sm border border-primary/20 hover:border-primary/40 transition">
+    <img
+      src={src}
+      alt={`Partner logo ${index + 1}`}
+      className="max-h-16 sm:max-h-14 md:max-h-20 w-auto object-contain opacity-90 hover:opacity-100 transition"
+    />
+  </div>
+</div>
+
           ))}
         </motion.div>
       </div>
