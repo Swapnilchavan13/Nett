@@ -69,7 +69,7 @@ const [videoUrl, setVideoUrl] = useState<string | null>(null);
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
         {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/10 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/40" />
       </motion.div>
 
