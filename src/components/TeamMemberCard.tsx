@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Linkedin, User } from "lucide-react";
+import { useState } from "react";
+
 
 interface TeamMember {
   name: string;
@@ -18,6 +20,9 @@ interface TeamMemberCardProps {
 }
 
 const TeamMemberCard = ({ member, index, isInView }: TeamMemberCardProps) => {
+
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <motion.div
       className="glass-card p-4 sm:p-6 group hover:border-primary/30 transition-colors"
@@ -49,9 +54,25 @@ const TeamMemberCard = ({ member, index, isInView }: TeamMemberCardProps) => {
       </div>
 
       {/* Description */}
-      <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-4">
+      {/* <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-4">
         {member.description}
-      </p>
+      </p> */}
+
+      <p
+  className={`text-muted-foreground text-xs sm:text-sm leading-relaxed mb-2 transition-all ${
+    expanded ? "line-clamp-none" : "line-clamp-3 sm:line-clamp-4"
+  }`}
+>
+  {member.description}
+</p>
+
+<button
+  onClick={() => setExpanded(!expanded)}
+  className="text-primary text-xs font-medium hover:underline"
+>
+  {expanded ? "Show less" : "Read more"}
+</button>
+
 
       {/* Carbon stats */}
       <div className="flex gap-2 sm:gap-3 pt-3 sm:pt-4 border-t border-border">

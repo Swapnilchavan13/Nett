@@ -7,7 +7,7 @@ const FarmersNetworkSection = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${sectionFarmers})` }}
+        style={{ backgroundImage: `url(${"https://iili.io/fOZaH8u.jpg"})` }}
       />
       
       {/* Gradient Overlay for text readability */}
@@ -51,7 +51,7 @@ const FarmersNetworkSection = () => {
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4"
           >
             An on-ground network of over{" "}
-            <span className="text-primary">15,000+</span>
+            <span className="text-primary">25,000+</span>
             <br className="hidden sm:block" />
             {" "}farmers and rapidly growing
           </motion.h2>
