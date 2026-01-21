@@ -387,9 +387,9 @@ const partnersData = {
       description: "ClimeScore is deployed at the finest & most reputed academic campuses across the country to measure their emissions - resulting in an impact through over 75,000 students & faculty.",
       backgroundImage: sectionGreenBiz,
       testimonial: {
-        quote: "Working with NettZero transformed our approach to sustainability. Their insights on carbon accounting and project implementation were invaluable.",
-        name: "Ananya Mehta",
-        company: "CEO, GreenWatt Energy",
+        quote: "NettZero has been a great partner in measuring emissions of Bridges by RARE and in taking sustainability to our partner hotels. Great team to work with.",
+        name: "Shobha Rudra",
+        company: "Founder, RARE India",
       },
     },
   ],
@@ -399,9 +399,9 @@ const partnersData = {
       description: "We work with some of the most robust, reliable and renowned players that provide technology to CDR Carbon Credit Developers. From dMRV providers with over 25 installations, to pyrolisis plant makers that are patent pending and recognised by registries such as Isometric to auditors like CERES - our standards are at par with the best in the world of Carbon Credits & Carbon Management.",
       backgroundImage: sectionPurchase,
       testimonial: {
-        quote: "The team’s expertise and attention to detail make NettZero a trusted partner for any organization aiming to achieve real climate impact.",
-        name: "Rohit Sharma",
-        company: "Director, EcoBuild Solutions",
+        quote: "It takes a huge amount of single-minded commitment and optimism to do the pioneering work you are doing in the subcontinent. All power to NettZero and its dedicated team.",
+        name: "Hashim Tyebji",
+        company: "Director, Kafila and renowned Tiger Conservationist",
       },
     },
     {
