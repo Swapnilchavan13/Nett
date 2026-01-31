@@ -19,7 +19,10 @@ const StatsSection = ({ stat, index, position = "left" }: StatsSectionProps) => 
   const isInView = useInView(ref, { once: false, amount: 0.4 });
 
   return (
-    <section ref={ref} className="section-panel">
+    <section ref={ref} className="section-panel bg-background/30
+      backdrop-blur-xl
+      border border-red/10
+      shadow-2xl">
       {/* Background Image */}
       <motion.div
         className="absolute inset-0 bg-cover bg-center"

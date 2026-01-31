@@ -25,7 +25,7 @@ const PlaceholderSection = ({ title, subtitle, sectionNumber }: PlaceholderSecti
       </div>
 
       {/* Central content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl">
+      <div className="relative z-10 text-center px-6 max-w-4xl ">
         {/* Large section number */}
         <motion.div
           className="mb-8"

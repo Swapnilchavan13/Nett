@@ -61,7 +61,6 @@ import footprintCoorg from "@/assets/footprint-coorg.jpg";
 
 //Section Video
 
-import co22 from "@/assets/co22.mp4";
 import ScrollSection from "@/components/ScrollSection";
 
 const carouselItems = [
@@ -84,7 +83,7 @@ const nettZeroSuiteSections = {
       logoImage: logoClimeScore,
      act: {
   type: "video",
-  value: co22 // video url or id
+ 
 }
     },
     {
@@ -237,7 +236,7 @@ const galleryData = [
     state: "Himachal Pradesh",
     headline: "Biochar from Orchard Prunings",
     description: "We are creating biochar using orchard prunings from over 100,000 trees — which were earlier getting burnt — transforming agricultural waste into a powerful carbon sequestration tool.",
-    backgroundImage: "https://iili.io/fgqigYQ.webp",
+    backgroundImage: "https://i.postimg.cc/43B7BXJQ/High-density-apple-farming-fetches-good-returns-for-growers.webp",
     mapX: 185,
     mapY: 130,
     images: [
@@ -254,7 +253,7 @@ const galleryData = [
     state: "Uttar Pradesh",
     headline: "Protecting Air Quality Through Biochar",
     description: "We are creating biochar using rice-straw from over 5,000 farmers — directly preventing hundreds of tons of PM2.5 from affecting the AQI and improving regional air quality.",
-    backgroundImage: "https://iili.io/fe7dutf.jpg",
+    backgroundImage: "https://i.postimg.cc/59F5NF9V/IMG-7218.jpg",
     mapX: 270,
     mapY: 240,
      images: [
@@ -272,7 +271,7 @@ const galleryData = [
     state: "Madhya Pradesh",
     headline: "Invasive Species to Biochar",
     description: "We are converting invasive species and rice straw into biochar for the last 2 years. We've covered nearly 10,000 farmers and prevented over 200,000 kgs of rice straw from being burnt.",
-    backgroundImage: "https://iili.io/fgB9LrP.jpg",
+    backgroundImage: "https://i.postimg.cc/hGqbH4RX/bandhavgarh-park-wild.jpg",
     mapX: 250,
     mapY: 325,
      images: [
@@ -289,7 +288,7 @@ const galleryData = [
     state: "Madhya Pradesh",
     headline: "Farmer Cooperative Impact",
     description: "We are converting rice straw into biochar and working with a cooperative of over 20,000 farmers. This year, we will prevent 300,000 kgs of rice straw from being burnt.",
-    backgroundImage: "https://iili.io/fe7dIus.jpg",
+    backgroundImage: "https://i.postimg.cc/qMx3zs9W/Whats-App-Image-2026-01-09-at-5-54-28-PM.jpg",
     mapX: 220,
     mapY: 320,
      images: [
@@ -326,19 +325,19 @@ const statsData = {
       value: "500,000+",
       label: "Litres of Biochar",
       description: "Our biochar production facilities have created over half a million litres of this powerful carbon-negative material, permanently sequestering carbon in soil.",
-      backgroundImage: "https://iili.io/fkEiScb.jpg",
+      backgroundImage: "https://i.postimg.cc/L6x8cxdd/Whats-App-Image-2026-01-10-at-3-05-05-PM.jpg",
     },
     {
       value: "25,000+",
       label: "Farmers in Network",
       description: "A thriving network of over 25,000 farmers participate in our rice-straw collection program, transforming agricultural waste into climate solutions.",
-      backgroundImage: "https://iili.io/fkEi8Ku.jpg",
+      backgroundImage: "https://i.postimg.cc/cJwZLmzR/Whats-App-Image-2026-01-09-at-5-54-26-PM.jpg",
     },
     {
       value: "1M+",
       label: "Kgs of Straw Saved",
       description: "Over 1 million kilograms of rice straw diverted from burning, preventing massive CO₂ emissions and improving local air quality for communities.",
-      backgroundImage: "https://iili.io/fOZpqXI.png",
+      backgroundImage: "https://i.postimg.cc/hPfkGszm/IMG-7221.jpg",
     },
     {
       value: "20,000+",
@@ -350,7 +349,7 @@ const statsData = {
       value: "40,000+",
       label: "Trees Planted",
       description: "Our reforestation initiatives have planted over 40,000 trees across degraded landscapes, restoring ecosystems and creating long-term carbon sinks.",
-      backgroundImage: "https://iili.io/fgBVhBe.jpg",
+      backgroundImage: "https://i.postimg.cc/8P6Z30fr/Trees1-Danielle-Austen.jpg",
     },
     {
       value: "140+",
@@ -456,7 +455,7 @@ const footprintData = [
     state: "Himachal Pradesh",
     headline: "Biochar from Orchard Prunings",
     description: "We are creating biochar using orchard prunings from over 100,000 trees — which were earlier getting burnt — transforming agricultural waste into a powerful carbon sequestration tool.",
-    backgroundImage: "https://iili.io/fgBZPYG.webp",
+    backgroundImage: "https://i.postimg.cc/FFgXYpx2/IMG-7829.jpg",
     mapX: 185,
     mapY: 130,
   },
@@ -465,7 +464,7 @@ const footprintData = [
     state: "Uttar Pradesh",
     headline: "Protecting Air Quality Through Biochar",
     description: "We are creating biochar using rice-straw from over 5,000 farmers — directly preventing hundreds of tons of PM2.5 from affecting the AQI and improving regional air quality.",
-    backgroundImage: "https://iili.io/fOZpqXI.png",
+    backgroundImage: "https://i.postimg.cc/02bnT2rY/Homepage-Slider3-Rice-Straw.png",
     mapX: 270,
     mapY: 240,
   },
@@ -483,7 +482,7 @@ const footprintData = [
     state: "Madhya Pradesh",
     headline: "Invasive Species to Biochar",
     description: "We are converting invasive species and rice straw into biochar for the last 2 years. We've covered nearly 10,000 farmers and prevented over 200,000 kgs of rice straw from being burnt.",
-    backgroundImage: "https://iili.io/fgCJzIs.jpg",
+    backgroundImage: "https://i.postimg.cc/3Rq4m7hq/IMG-7236.jpg",
      mapX: 250,
     mapY: 325,
   },
@@ -492,7 +491,7 @@ const footprintData = [
     state: "Madhya Pradesh",
     headline: "Farmer Cooperative Impact",
     description: "We are converting rice straw into biochar and working with a cooperative of over 20,000 farmers. This year, we will prevent 300,000 kgs of rice straw from being burnt.",
-    backgroundImage: "https://iili.io/fkEirHx.jpg",
+    backgroundImage: "https://i.postimg.cc/sgWkRJ1D/IMG-7345.jpg",
      mapX: 220,
     mapY: 320,
   },
@@ -501,7 +500,7 @@ const footprintData = [
     state: "Maharashtra",
     headline: "Asia's First Carbon Neutral Resort",
     description: "We have created Asia's first carbon neutral resort by working with the prestigious eco-luxury retreat called The Machan, for the last four years — pioneering sustainable luxury tourism.",
-    backgroundImage: "https://iili.io/fgnMD1n.jpg",
+    backgroundImage: "https://www.themachan.com/img/slider-main/slider/1.webp",
      mapX: 120,
     mapY: 440,
   },

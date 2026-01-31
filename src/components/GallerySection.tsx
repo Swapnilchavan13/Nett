@@ -53,7 +53,11 @@ const GallerySection = ({ project, index, position = "left" }: GallerySectionPro
       {/* Content */}
       <div className={`relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 flex ${position === "right" ? "justify-end" : "justify-start"}`}>
         <motion.div
-          className="content-box"
+          className="content-box  bg-background/30
+      backdrop-blur-xl
+      border border-red/10
+      shadow-2xl"
+          
           initial={{ opacity: 0, x: position === "left" ? -60 : 60 }}
           animate={{ 
             opacity: isInView ? 1 : 0,

@@ -7,7 +7,7 @@ const FarmersNetworkSection = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${"https://iili.io/fOZaH8u.jpg"})` }}
+        style={{ backgroundImage: `url(${"https://i.postimg.cc/d3pJ5tSv/Homepage-Slider3-Farmers2.png"})` }}
       />
       
       {/* Gradient Overlay for text readability */}

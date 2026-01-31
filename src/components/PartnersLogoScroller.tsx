@@ -2,27 +2,43 @@ import { motion } from "framer-motion";
 import sectionPartnersImg from "@/assets/section-partners.jpg";
 
 const logos = [
-  "https://iili.io/famRxPp.jpg",
-"https://iili.io/famRIKN.jpg",
-"https://iili.io/fgxzsat.png",
-"https://iili.io/famRnov.jpg",
-"https://iili.io/famRoVR.jpg",
-"https://iili.io/famR5Rn.jpg",
-"https://iili.io/famRTlI.jpg",
-"https://iili.io/famRuSt.jpg",
-"https://iili.io/famRRHX.jpg",
-"https://iili.io/famRYDG.jpg",
-  "https://iili.io/famKCrv.jpg",
+//   "https://iili.io/famRxPp.jpg",
+// "https://iili.io/famRIKN.jpg",
+// "https://iili.io/fgxzsat.png",
+// "https://iili.io/famRnov.jpg",
+// "https://iili.io/famRoVR.jpg",
+// "https://iili.io/famR5Rn.jpg",
+// "https://iili.io/famRTlI.jpg",
+// "https://iili.io/famRuSt.jpg",
+// "https://iili.io/famRRHX.jpg",
+// "https://iili.io/famRYDG.jpg",
+//   "https://iili.io/famKCrv.jpg",
 
-  "https://iili.io/fgxq0vf.png",
+//   "https://iili.io/fgxq0vf.png",
 
-'https://iili.io/fTzwHJe.jpg',
-'https://iili.io/fTzAXiQ.jpg',
-'https://iili.io/fTzAWWx.jpg',
-'https://iili.io/fTzAGDb.jpg',
-'https://iili.io/fTzAEOu.jpg',
-'https://iili.io/fTzA1Re.jpg',
-'https://iili.io/fTzA0J9.jpg'
+// 'https://iili.io/fTzwHJe.jpg',
+// 'https://iili.io/fTzAXiQ.jpg',
+// 'https://iili.io/fTzAWWx.jpg',
+// 'https://iili.io/fTzAGDb.jpg',
+// 'https://iili.io/fTzAEOu.jpg',
+// 'https://iili.io/fTzA1Re.jpg',
+// 'https://iili.io/fTzA0J9.jpg'
+"https://i.postimg.cc/2SHTBRsm/Untitled-design-(37).jpg",
+"https://i.postimg.cc/zGdpRZsr/Untitled-design-(38).jpg",
+"https://i.postimg.cc/K89QgSdd/Untitled-design-(53).jpg",
+"https://i.postimg.cc/6p6Y351D/Untitled-design-(59).jpg",
+"https://i.postimg.cc/JzTKBV92/Untitled-design-(61).jpg",
+"https://i.postimg.cc/W19SJLQy/Untitled-design-(95).jpg",
+"https://i.postimg.cc/y8fnS4wp/Untitled-design-(96).jpg",
+"https://i.postimg.cc/3xrnRJcM/Untitled-design-(97).jpg",
+"https://i.postimg.cc/2SHTBRPM/Untitled-design-(98).jpg",
+"https://i.postimg.cc/Z5fjyt1D/Untitled-design-(99).jpg",
+"https://i.postimg.cc/Z5fjyt17/Untitled-design-2025-12-16T113458-838.jpg",
+"https://i.postimg.cc/8zywrQqt/Untitled-design-2025-12-16T113537-142.jpg",
+"https://i.postimg.cc/BnhN19rG/Untitled-design-2025-12-16T113622-949.jpg",
+"https://i.postimg.cc/FHPGJ52P/Untitled-design-2025-12-16T113707-868.jpg",
+"https://i.postimg.cc/rwyQmFYB/Untitled-design-2025-12-16T113742-984.jpg"
+
 ];
 
 

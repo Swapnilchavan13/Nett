@@ -64,7 +64,7 @@ const Navbar = () => {
               
      <div className="flex flex-col items-center text-center gap-3">
   <img
-    src="https://iili.io/fOAcFsf.jpg"
+    src="https://i.postimg.cc/bYCvM6fv/nett.webp"
     alt="NettZero Logo"
     className="w-40 h-auto object-contain rounded-lg opacity-90 transition-opacity duration-300 group-hover:opacity-100"
   />

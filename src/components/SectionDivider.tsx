@@ -23,13 +23,13 @@ const SectionDivider = ({ title, subtitle, sectionNumber }: SectionDividerProps)
 
       {/* Central glow */}
       <motion.div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-10"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-10 "
         style={{ background: 'radial-gradient(circle, hsl(142 76% 45%), transparent 60%)' }}
         animate={{ scale: [1, 1.2, 1] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      <div className="relative z-10 text-center px-6">
+      <div className="relative z-10 text-center px-6 ">
         {/* Section number */}
         {sectionNumber && (
           <motion.div
