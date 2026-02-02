@@ -240,12 +240,13 @@ const galleryData = [
     mapX: 185,
     mapY: 130,
     images: [
-      'https://iili.io/fOZpEdb.png',
-'https://iili.io/fOZpl1e.png',
-'https://iili.io/fOZpYL7.png',
-'https://iili.io/fOZpqXI.png',
-'https://iili.io/fOZpfzN.png',
-'https://iili.io/fOZwmYv.jpg'
+      'https://i.postimg.cc/ydXbfsjr/IMG-7218.jpg',
+'https://i.postimg.cc/44P0V4m9/IMG-7219.jpg',
+'https://i.postimg.cc/9MtnxCbb/IMG-7221.jpg',
+'https://i.postimg.cc/RFQDP4dR/IMG-7345.jpg',
+'https://i.postimg.cc/k4Fpjqsk/IMG-7388.jpg',
+'https://i.postimg.cc/Pfy7YfP5/IMG-7828.jpg'
+
     ],
   },
   {
@@ -257,12 +258,13 @@ const galleryData = [
     mapX: 270,
     mapY: 240,
      images: [
-      'https://iili.io/fOZpxgs.png',
-'https://iili.io/fOZpnqX.png',
-'https://iili.io/fOZwt4a.jpg',
-'https://iili.io/fOZaVt4.jpg',
-'https://iili.io/fOZaGAG.jpg',
-'https://iili.io/fOZaE9s.jpg'
+      'https://i.postimg.cc/4yYpY1Yh/8981390D-7A7C-4488-9CD7-89C945C51CFB.jpg',
+'https://i.postimg.cc/d3grrTdv/IMG-7236.jpg',
+'https://i.postimg.cc/L5JjJVJn/Whats-App-Image-2026-01-09-at-5-54-11-PM.jpg',
+'https://i.postimg.cc/tTShRc4h/Whats-App-Image-2026-01-09-at-5-54-11-PM-(1).jpg',
+'https://i.postimg.cc/tTShRc4F/Whats-App-Image-2026-01-09-at-5-54-28-PM.jpg',
+'https://i.postimg.cc/bvYgzk9M/Whats-App-Image-2026-01-09-at-5-54-27-PM-(1).jpg'
+
     ],
   },
 
@@ -275,12 +277,13 @@ const galleryData = [
     mapX: 250,
     mapY: 325,
      images: [
-      'https://iili.io/fkMupja.jpg',
-'https://iili.io/fkMumTg.jpg',
-'https://iili.io/fkMuDyF.jpg',
-'https://iili.io/fkMuyZJ.png',
-'https://iili.io/fOZpfzN.png',
-'https://iili.io/fOZwmYv.jpg'
+      'https://i.postimg.cc/mr6YBqrv/8981390D-7A7C-4488-9CD7-89C945C51CFB.jpg',
+'https://i.postimg.cc/Ls0t27XM/bandhavgarh-nature.jpg',
+'https://i.postimg.cc/hG3Lcwjc/E9ACE7A0-8F0E-4555-AD36-6EB8581D2A5A.jpg',
+'https://i.postimg.cc/PqFWTcxj/Whats-App-Image-2026-01-09-at-5-54-26-PM.jpg',
+'https://i.postimg.cc/hG3LcwjK/Whats-App-Image-2026-01-10-at-3-05-05-PM.jpg',
+'https://i.postimg.cc/k5hQqZ4r/why-bandhavgarh-national-park-banner-img.jpg',
+
     ],
   },
   {
@@ -292,12 +295,12 @@ const galleryData = [
     mapX: 220,
     mapY: 320,
      images: [
-      'https://iili.io/fkEiUSj.jpg',
-'https://iili.io/fkEiScb.jpg',
-'https://iili.io/fkEikPe.jpg',
-'https://iili.io/fkEi8Ku.jpg',
-'https://iili.io/fkEirHx.jpg',
-'https://iili.io/fkEi4AQ.jpg',
+      'https://i.postimg.cc/qMx3zs9W/Whats_App_Image_2026_01_09_at_5_54_28_PM.jpg',
+'https://i.postimg.cc/d3pJ5tSv/Homepage_Slider3_Farmers2.png',
+'https://i.postimg.cc/sgWkRJ1D/IMG_7345.jpg',
+'https://i.postimg.cc/k4Fpjqsk/IMG_7388.jpg',
+'https://i.postimg.cc/mr6YBqrv/8981390D_7A7C_4488_9CD7_89C945C51CFB.jpg',
+'https://i.postimg.cc/hG3Lcwjc/E9ACE7A0_8F0E_4555_AD36_6EB8581D2A5A.jpg',
       
     ],
   },
@@ -406,7 +409,7 @@ const partnersData = {
     {
       name: "Implementation Partners",
       description: "ClimeGrove works with over 15,000 farmers through a network of NABARD aligned NGO’s and local agencies with years of experience in farmer management. All biomass management & fertiliser distribution is done on the back of this network - ensuring crucial last mile solidity in implementation.",
-      backgroundImage: sectionLeaders,
+      backgroundImage: "https://i.postimg.cc/50y48NB9/a-group-of-four-businesspeople-talking-at-a-table.jpg",
       testimonial: {
         quote: "NettZero helped us measure and offset emissions across our operations. The process was smooth and the results were transparent.",
         name: "Priya Desai",
