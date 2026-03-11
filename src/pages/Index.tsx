@@ -66,9 +66,9 @@ import ScrollSection from "@/components/ScrollSection";
 const carouselItems = [
   { name: "ClimeScore", image: carouselClimeScore, tagline: "Measure your carbon footprint" },
   { name: "ClimeGrove", image: carouselClimeGrove, tagline: "Develop CDR Carbon Credits" },
+  { name: "CO₂IN", image: carouselClimeFolio, tagline: "Carbon Credits Forum" },
   { name: "ClimeSchool", image: carouselClimeSchool, tagline: "Further Climate Literacy" },
   { name: "ClimeStore", image: carouselClimeStore, tagline: "Decarbonise Supply Chain" },
-  { name: "ClimeFolio", image: carouselClimeFolio, tagline: "Purchases Curated Carbon Credits" },
 ];
 
 // Section 1: The NettZero Suite
@@ -89,7 +89,7 @@ const nettZeroSuiteSections = {
     {
       title: "Reduce",
       headline: "Cut Emissions at Source",
-      description: "Implement data-driven strategies to minimize your carbon output. From energy efficiency to process optimization, we identify the highest-impact reduction opportunities. Powered by AI trained to detect target based reduction.",
+      description: "Implement data-driven strategies to minimize your carbon output. From energy efficiency to process optimization, we identify the highest-impact reduction opportunities. Powered by AI to detect target based reduction.",
       backgroundImage: sectionReduce,
       btn:'16 GRI standard reports published',
       logoImage: logoClimeScore,
@@ -236,16 +236,24 @@ const galleryData = [
     state: "Himachal Pradesh",
     headline: "Biochar from Orchard Prunings",
     description: "We are creating biochar using orchard prunings from over 100,000 trees — which were earlier getting burnt — transforming agricultural waste into a powerful carbon sequestration tool.",
-    backgroundImage: "https://i.postimg.cc/43B7BXJQ/High-density-apple-farming-fetches-good-returns-for-growers.webp",
+    backgroundImage: "https://iili.io/q5D28fR.png",
     mapX: 185,
     mapY: 130,
     images: [
-      'https://i.postimg.cc/ydXbfsjr/IMG-7218.jpg',
-'https://i.postimg.cc/44P0V4m9/IMG-7219.jpg',
-'https://i.postimg.cc/9MtnxCbb/IMG-7221.jpg',
-'https://i.postimg.cc/RFQDP4dR/IMG-7345.jpg',
-'https://i.postimg.cc/k4Fpjqsk/IMG-7388.jpg',
-'https://i.postimg.cc/Pfy7YfP5/IMG-7828.jpg'
+//       'https://i.postimg.cc/ydXbfsjr/IMG-7218.jpg',
+// 'https://i.postimg.cc/44P0V4m9/IMG-7219.jpg',
+// 'https://i.postimg.cc/9MtnxCbb/IMG-7221.jpg',
+// 'https://i.postimg.cc/RFQDP4dR/IMG-7345.jpg',
+// 'https://i.postimg.cc/k4Fpjqsk/IMG-7388.jpg',
+// 'https://i.postimg.cc/Pfy7YfP5/IMG-7828.jpg',
+
+
+'https://iili.io/q5thJR4.jpg',
+'https://iili.io/q5th2b2.jpg',
+'https://iili.io/q5tXyUG.jpg',
+'https://iili.io/q5tXpls.jpg',
+'https://iili.io/q5tXiRR.jpg',
+'https://iili.io/q5tUHEQ.jpg'
 
     ],
   },
@@ -254,16 +262,23 @@ const galleryData = [
     state: "Uttar Pradesh",
     headline: "Protecting Air Quality Through Biochar",
     description: "We are creating biochar using rice-straw from over 5,000 farmers — directly preventing hundreds of tons of PM2.5 from affecting the AQI and improving regional air quality.",
-    backgroundImage: "https://i.postimg.cc/59F5NF9V/IMG-7218.jpg",
+    backgroundImage: "https://iili.io/KD3lbLv.png",
     mapX: 270,
     mapY: 240,
      images: [
-      'https://i.postimg.cc/4yYpY1Yh/8981390D-7A7C-4488-9CD7-89C945C51CFB.jpg',
-'https://i.postimg.cc/d3grrTdv/IMG-7236.jpg',
-'https://i.postimg.cc/L5JjJVJn/Whats-App-Image-2026-01-09-at-5-54-11-PM.jpg',
-'https://i.postimg.cc/tTShRc4h/Whats-App-Image-2026-01-09-at-5-54-11-PM-(1).jpg',
-'https://i.postimg.cc/tTShRc4F/Whats-App-Image-2026-01-09-at-5-54-28-PM.jpg',
-'https://i.postimg.cc/bvYgzk9M/Whats-App-Image-2026-01-09-at-5-54-27-PM-(1).jpg'
+//       'https://i.postimg.cc/4yYpY1Yh/8981390D-7A7C-4488-9CD7-89C945C51CFB.jpg',
+// 'https://i.postimg.cc/d3grrTdv/IMG-7236.jpg',
+// 'https://i.postimg.cc/L5JjJVJn/Whats-App-Image-2026-01-09-at-5-54-11-PM.jpg',
+// 'https://i.postimg.cc/tTShRc4h/Whats-App-Image-2026-01-09-at-5-54-11-PM-(1).jpg',
+// 'https://i.postimg.cc/tTShRc4F/Whats-App-Image-2026-01-09-at-5-54-28-PM.jpg',
+// 'https://i.postimg.cc/bvYgzk9M/Whats-App-Image-2026-01-09-at-5-54-27-PM-(1).jpg'
+
+'https://iili.io/q5D0VRI.jpg',
+'https://iili.io/q5D0ESp.jpg',
+'https://iili.io/q5D01lR.jpg',
+'https://iili.io/q5D0aVa.jpg',
+'https://iili.io/q5D0wVs.jpg',
+'https://iili.io/q5D0eff.jpg'
 
     ],
   },
@@ -271,7 +286,7 @@ const galleryData = [
   {
     name: "Bandhavgarh",
     state: "Madhya Pradesh",
-    headline: "Invasive Species to Biochar",
+    headline: "Rice Straw to Biochar",
     description: "We are converting invasive species and rice straw into biochar for the last 2 years. We've covered nearly 10,000 farmers and prevented over 200,000 kgs of rice straw from being burnt.",
     backgroundImage: "https://i.postimg.cc/hGqbH4RX/bandhavgarh-park-wild.jpg",
     mapX: 250,
@@ -283,8 +298,7 @@ const galleryData = [
 'https://i.postimg.cc/PqFWTcxj/Whats-App-Image-2026-01-09-at-5-54-26-PM.jpg',
 'https://i.postimg.cc/hG3LcwjK/Whats-App-Image-2026-01-10-at-3-05-05-PM.jpg',
 'https://i.postimg.cc/k5hQqZ4r/why-bandhavgarh-national-park-banner-img.jpg',
-
-    ],
+],
   },
   {
     name: "Damoh",
@@ -320,7 +334,7 @@ const statsData = {
       value: "25+",
       label: "Industry Leaders",
       description: "More than 25 leading companies trust NettZero to measure, manage, and reduce their carbon footprint, spanning sectors from finance to agriculture.",
-      backgroundImage: sectionDevelop,
+      backgroundImage: "https://www.themachan.com/img/slider-main/slider/1.webp",
     },
   ],
   carbonRemoval: [
@@ -334,7 +348,7 @@ const statsData = {
       value: "25,000+",
       label: "Farmers in Network",
       description: "A thriving network of over 25,000 farmers participate in our rice-straw collection program, transforming agricultural waste into climate solutions.",
-      backgroundImage: "https://i.postimg.cc/cJwZLmzR/Whats-App-Image-2026-01-09-at-5-54-26-PM.jpg",
+      backgroundImage: "https://iili.io/q5th2b2.jpg",
     },
     {
       value: "1M+",
@@ -377,7 +391,7 @@ const partnersData = {
     {
       name: "Hospitality Leaders",
       description: "India’s leading Sustainable Hospitality organisations trust ClimeScore to measure and report their Carbon Emissions. From The Machan to The Tamara - they bank on our platform.",
-      backgroundImage: sectionPartners,
+      backgroundImage: "https://gos3.ibcdn.com/35b4ea78-1c2f-4d76-bf39-5757c6eb73ab.webp",
       testimonial: {
         quote: "NettZero is a company founded with a shared vision to create a positive impact on the planet, one step at a time. Their commitment to emissions measurement and reporting is both rigorous and purpose-driven, making sustainability actionable for organizations of all sizes.",
         name: "Varun Hooja",
@@ -387,7 +401,7 @@ const partnersData = {
     {
       name: "Academic Institutions",
       description: "ClimeScore is deployed at the finest & most reputed academic campuses across the country to measure their emissions - resulting in an impact through over 75,000 students & faculty.",
-      backgroundImage: sectionGreenBiz,
+      backgroundImage: "https://images.squarespace-cdn.com/content/v1/5fc463b9df132613bbd422a5/1607559213633-RU0GHLJ43QYEE3VKV5K6/Graduations+Now+Blog+Different+Types+of+High+School+Graduation+Hats.jpg",
       testimonial: {
         quote: "NettZero has been a great partner in measuring emissions of Bridges by RARE and in taking sustainability to our partner hotels. Great team to work with.",
         name: "Shobha Rudra",
@@ -458,7 +472,7 @@ const footprintData = [
     state: "Himachal Pradesh",
     headline: "Biochar from Orchard Prunings",
     description: "We are creating biochar using orchard prunings from over 100,000 trees — which were earlier getting burnt — transforming agricultural waste into a powerful carbon sequestration tool.",
-    backgroundImage: "https://i.postimg.cc/FFgXYpx2/IMG-7829.jpg",
+    backgroundImage: "https://iili.io/q5D28fR.png",
     mapX: 185,
     mapY: 130,
   },
@@ -485,7 +499,7 @@ const footprintData = [
     state: "Madhya Pradesh",
     headline: "Invasive Species to Biochar",
     description: "We are converting invasive species and rice straw into biochar for the last 2 years. We've covered nearly 10,000 farmers and prevented over 200,000 kgs of rice straw from being burnt.",
-    backgroundImage: "https://i.postimg.cc/3Rq4m7hq/IMG-7236.jpg",
+    backgroundImage: "https://iili.io/q5bvb9t.png",
      mapX: 250,
     mapY: 325,
   },
