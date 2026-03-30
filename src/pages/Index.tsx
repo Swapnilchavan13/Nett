@@ -784,9 +784,9 @@ const Index = () => {
               <div>
                 <h4 className="text-foreground font-semibold mb-3 sm:mb-4 text-xs sm:text-sm tracking-wider uppercase">Products</h4>
                 <ul className="space-y-1.5 sm:space-y-2">
-                  <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors text-xs sm:text-sm">ClimeScore</a></li>
-                  <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors text-xs sm:text-sm">MicroOffsets</a></li>
-                  <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors text-xs sm:text-sm">ClimeGrove</a></li>
+                  <li><a href="https://climescore.com" className="text-muted-foreground hover:text-primary transition-colors text-xs sm:text-sm">ClimeScore</a></li>
+                  <li><a href="https://cooin.in" className="text-muted-foreground hover:text-primary transition-colors text-xs sm:text-sm">COIN</a></li>
+                  <li><a href="https://www.climegrove.com" className="text-muted-foreground hover:text-primary transition-colors text-xs sm:text-sm">ClimeGrove</a></li>
                   <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors text-xs sm:text-sm">ClimeSchool</a></li>
                   <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors text-xs sm:text-sm">ClimeStore</a></li>
                   <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors text-xs sm:text-sm">ClimeFolio</a></li>
