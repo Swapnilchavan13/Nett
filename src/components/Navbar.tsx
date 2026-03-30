@@ -13,8 +13,8 @@ const sections = [
 ];
 
 const productLinks = [
-  { label: "ClimeScore", href: "#" },
-  { label: "MicroOffsets", href: "#" },
+  { label: "ClimeScore", href: "https://climescore.com/" },
+  { label: "COIN", href: "https://cooin.in/" },
   { label: "ClimeGrove", href: "https://www.climegrove.com" },
   { label: "ClimeSchool", href: "#" },
   { label: "ClimeStore", href: "#" },

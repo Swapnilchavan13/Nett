@@ -1,5 +1,5 @@
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { BarChart3, Trees, GraduationCap, Wallet, ShoppingBag, ArrowRight } from "lucide-react";
 
@@ -39,6 +39,20 @@ const pillars = [
 const NettZeroForYou = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, amount: 0.2 });
+
+
+   const [open, setOpen] = useState(false);
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = () => {
+    const subject = encodeURIComponent(`New Message from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\n\nMessage:\n${message}`);
+
+    const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=relationships@nettzero.world&su=${subject}&body=${body}`;
+
+    window.open(gmailURL, "_blank");
+  };
 
   return (
     <section ref={ref} className="min-h-screen relative bg-background py-12 sm:py-16 md:py-24">
@@ -113,16 +127,59 @@ const NettZeroForYou = () => {
             <p className="text-muted-foreground text-sm sm:text-base max-w-lg text-center">
               Join the growing community of organizations committed to measurable climate action.
             </p>
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-base md:text-lg font-medium rounded-full group"
-            >
-              Get in Touch
-              <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            {/* Button */}
+      <button
+        onClick={() => setOpen(true)}
+        className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-base md:text-lg font-medium rounded-full group flex items-center"
+      >
+        Get in Touch
+        <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+      </button>
+
+      {/* Modal */}
+      {open && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-2xl p-6 w-[90%] max-w-md shadow-xl">
+            <h2 className="text-xl font-semibold mb-4">Get in Touch</h2>
+
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full border rounded-lg p-3 mb-3"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+
+            <textarea
+              placeholder="Your Message"
+              className="w-full border rounded-lg p-3 mb-4 h-28"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+
+            <div className="flex justify-end gap-2">
+              <button
+                onClick={() => setOpen(false)}
+                className="px-4 py-2 rounded-lg bg-gray-200"
+              >
+                Cancel
+              </button>
+
+              <button
+                onClick={handleSubmit}
+                className="px-4 py-2 rounded-lg bg-primary text-white"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
           </div>
         </motion.div>
       </div>
+
+      
     </section>
   );
 };
