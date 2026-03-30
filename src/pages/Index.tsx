@@ -292,12 +292,19 @@ const galleryData = [
     mapX: 250,
     mapY: 325,
      images: [
-      'https://i.postimg.cc/mr6YBqrv/8981390D-7A7C-4488-9CD7-89C945C51CFB.jpg',
-'https://i.postimg.cc/Ls0t27XM/bandhavgarh-nature.jpg',
-'https://i.postimg.cc/hG3Lcwjc/E9ACE7A0-8F0E-4555-AD36-6EB8581D2A5A.jpg',
-'https://i.postimg.cc/PqFWTcxj/Whats-App-Image-2026-01-09-at-5-54-26-PM.jpg',
-'https://i.postimg.cc/hG3LcwjK/Whats-App-Image-2026-01-10-at-3-05-05-PM.jpg',
-'https://i.postimg.cc/k5hQqZ4r/why-bandhavgarh-national-park-banner-img.jpg',
+//       'https://i.postimg.cc/mr6YBqrv/8981390D-7A7C-4488-9CD7-89C945C51CFB.jpg',
+// 'https://i.postimg.cc/Ls0t27XM/bandhavgarh-nature.jpg',
+// 'https://i.postimg.cc/hG3Lcwjc/E9ACE7A0-8F0E-4555-AD36-6EB8581D2A5A.jpg',
+// 'https://i.postimg.cc/PqFWTcxj/Whats-App-Image-2026-01-09-at-5-54-26-PM.jpg',
+// 'https://i.postimg.cc/hG3LcwjK/Whats-App-Image-2026-01-10-at-3-05-05-PM.jpg',
+// 'https://i.postimg.cc/k5hQqZ4r/why-bandhavgarh-national-park-banner-img.jpg',
+
+'https://iili.io/BJ5PrQa.jpg',
+'https://iili.io/BJ5Pe2V.jpg',
+'https://iili.io/BJ5PXLb.jpg',
+'https://iili.io/BJ5PVIe.jpg',
+'https://iili.io/BJ5i23l.jpg',
+'https://iili.io/BJ5iA8B.jpg',
 ],
   },
   {
@@ -316,12 +323,19 @@ const galleryData = [
 // 'https://i.postimg.cc/mr6YBqrv/8981390D_7A7C_4488_9CD7_89C945C51CFB.jpg',
 // 'https://i.postimg.cc/hG3Lcwjc/E9ACE7A0_8F0E_4555_AD36_6EB8581D2A5A.jpg',
 
-'https://iili.io/qcZW7Tu.jpg',
-'https://iili.io/qcZWT2S.jpg',
-'https://iili.io/qcZWRpe.jpg',
-'https://iili.io/qcZWAv9.jpg',
-'https://iili.io/qcZWwZJ.jpg',
-'https://iili.io/qcZWQ6l.jpg'
+// 'https://iili.io/qcZW7Tu.jpg',
+// 'https://iili.io/qcZWT2S.jpg',
+// 'https://iili.io/qcZWRpe.jpg',
+// 'https://iili.io/qcZWAv9.jpg',
+// 'https://iili.io/qcZWwZJ.jpg',
+// 'https://iili.io/qcZWQ6l.jpg'
+
+'https://iili.io/BJRtzSR.jpg',
+'https://iili.io/BJRtxcv.jpg',
+'https://iili.io/BJRtBMg.jpg',
+'https://iili.io/BJRt29V.jpg',
+'https://iili.io/BJRtGHl.jpg',
+'https://iili.io/BJRtkUx.jpg'
       
     ],
   },
