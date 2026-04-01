@@ -66,7 +66,7 @@ import ScrollSection from "@/components/ScrollSection";
 const carouselItems = [
   { name: "ClimeScore", image: carouselClimeScore, tagline: "Measure your carbon footprint" },
   { name: "ClimeGrove", image: carouselClimeGrove, tagline: "Develop CDR Carbon Credits" },
-  { name: "CO₂IN", image: carouselClimeFolio, tagline: "Carbon Credits Forum" },
+  { name: "COIN", image: carouselClimeFolio, tagline: "Carbon Credits Forum" },
   { name: "ClimeSchool", image: carouselClimeSchool, tagline: "Further Climate Literacy" },
   { name: "ClimeStore", image: carouselClimeStore, tagline: "Decarbonise Supply Chain" },
 ];
