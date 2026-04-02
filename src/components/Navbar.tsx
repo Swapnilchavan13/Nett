@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ExternalLink } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const sections = [
   { id: "suite", label: "The NettZero Suite" },
@@ -10,6 +11,8 @@ const sections = [
   { id: "footprint", label: "Footprint" },
   { id: "team", label: "Team" },
   { id: "for-you", label: "For You" },
+  { id: "calculator", label: "Calculate Your" },
+
 ];
 
 const productLinks = [
@@ -22,6 +25,7 @@ const productLinks = [
 ];
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -33,13 +37,22 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+ const scrollToSection = (id: string) => {
+  if (id === "calculator") {
+    navigate("/calculator");
     setIsMobileMenuOpen(false);
-  };
+    return;
+  }
+
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+
+  setIsMobileMenuOpen(false);
+};
+
+  
 
   return (
     <>
@@ -77,16 +90,25 @@ const Navbar = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-1">
-              {sections.map((section) => (
-                <button
-                  key={section.id}
-                  onClick={() => scrollToSection(section.id)}
-                  className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors relative group"
-                >
-                  {section.label}
-                  <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-4/5" />
-                </button>
-              ))}
+             {sections.map((section) =>
+  section.id === "calculator" ? (
+    <button
+      key={section.id}
+      onClick={() => navigate("/calculator")}
+      className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground"
+    >
+      {section.label}
+    </button>
+  ) : (
+    <button
+      key={section.id}
+      onClick={() => scrollToSection(section.id)}
+      className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground"
+    >
+      {section.label}
+    </button>
+  )
+)}
             </div>
 
             {/* Desktop Products Dropdown */}
