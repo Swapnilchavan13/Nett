@@ -12,8 +12,8 @@ const teamMembers = [
     designation: "Intern",
     description: "Deepak Kumar Kushwaha is researching CSR as a tool to restore depleted soil organic carbon in Indian agricultural landscapes. His work evaluates how corporate initiatives can promote regenerative agriculture, improve soil fertility, and contribute to long-term environmental sustainability.",
     linkedinUrl: "https://www.linkedin.com/company/climescore/",
-    emission2025: 8.2,
-    offset2025: 8.5,
+    emission2025: "",
+    offset2025: "",
     image: ""
   },
   { name: "Gautam Shiknis", designation: "Founder & Chairman", description: "Gautam Shiknis is the architect of the NettZero Suite and its hands-on driving force. He brings nearly 30 years of entrepreneurial experience to this venture and has been a Climate Champion for over 20 years. Actively involved in greenhouse gas (GHG) accounting since 2008, Gautam combines strategic vision with on-ground execution to advance credible climate action and sustainability solutions. Under his leadership, the organization focuses on delivering transparent, data-driven climate solutions that enable measurable progress toward carbon neutrality. Gautam plays a key role in advancing initiatives related to carbon accounting, sustainability platforms, and biochar-based carbon removal. His approach emphasizes practical implementation, scalability, and long-term environmental impact.", linkedinUrl: "https://www.linkedin.com/in/shiknis/", emission2025: 14.2, offset2025: 15.8, image:'https://media.licdn.com/dms/image/v2/C4D03AQGwwJl0D_-OPw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1636129095656?e=2147483647&v=beta&t=CsmI_HoWJCNFGS3WuQ1kpdLpCaEFYqH6snv6_kyKZsc' },
@@ -22,8 +22,8 @@ const teamMembers = [
     designation: "Intern",
     description: "Harsh Bharti is developing a macro framework for the use of biomass as a fuel in Indian industry. His project examines policy, economic viability, and environmental impact, aiming to reduce fossil fuel dependence and promote sustainable energy adoption.",
     linkedinUrl: "https://www.linkedin.com/company/climescore/",
-    emission2025: 7.9,
-    offset2025: 8.6,
+    emission2025: "",
+    offset2025: "",
     image: ""
   },
    {
@@ -31,8 +31,8 @@ const teamMembers = [
     designation: "Intern",
     description: "Ipshita Dwivedi is exploring the application of climate finance in sustainability, focusing on funding mechanisms, investment flows, and policy frameworks. Her work highlights opportunities and challenges in implementing climate finance in emerging economies like India.",
     linkedinUrl: "https://www.linkedin.com/company/climescore/",
-    emission2025: 8.5,
-    offset2025: 9.1,
+    emission2025: "",
+    offset2025: "",
     image: ""
   },
    {
@@ -40,8 +40,8 @@ const teamMembers = [
     designation: "Intern",
     description: "Lohit Verma is analyzing the challenges in mobilizing farmer networks for biomass rehabilitation. His research focuses on logistical, financial, and awareness barriers, while identifying strategies to improve participation and promote sustainable biomass management.",
     linkedinUrl: "https://www.linkedin.com/company/climescore/",
-    emission2025: 8.8,
-    offset2025: 9.2,
+    emission2025: "",
+    offset2025: "",
     image: ""
   },
   { name: "Mukesh Kevad", designation: "Supervisor – Operations", description: "Mukesh Kevad works as a Supervisor in Operations, overseeing on-ground activities, coordinating teams, and ensuring smooth execution of projects. He plays a key role in maintaining operational efficiency, quality control, and adherence to processes across field operations.", linkedinUrl: "https://www.linkedin.com/company/climescore/", emission2025: 8.1, offset2025: 9.2 },
@@ -51,8 +51,8 @@ const teamMembers = [
     designation: "Intern",
     description: "Pavani Sambangi is working on the application of GHG accounting and GRI reporting for key Indian sectors. She focuses on measuring, monitoring, and reporting emissions in line with global sustainability practices, while also exploring how GRI standards improve transparency, compliance, and sustainability disclosures.",
     linkedinUrl: "https://www.linkedin.com/company/climescore/",
-    emission2025: 7.8,
-    offset2025: 8.4,
+    emission2025: "",
+    offset2025: "",
     image: ""
   },
   { name: "Pratyusha Priyanka", designation: "District Owner & Biochar Producer", description: "Pratyusha Priyanka is a District Owner and Biochar Producer, actively involved in decentralized biochar production and sustainable waste-to-resource initiatives. She supports local climate action by managing district-level operations and contributing to carbon sequestration through biochar projects.", linkedinUrl: "https://www.linkedin.com/company/climescore/", emission2025: 6.5, offset2025: 7.3, image:'https://i.postimg.cc/zf8HC0g6/Whats-App-Image-2026-01-06-at-4-48-48-PM.jpg' },
@@ -67,8 +67,8 @@ const teamMembers = [
     designation: "Intern",
     description: "Urfi Ali is working on applying B2B2C financing models for carbon credits in Indian corporate and services sectors. The project focuses on enabling carbon-neutral supply chains, addressing Scope 3 emissions, and encouraging stakeholder participation in decarbonization.",
     linkedinUrl: "https://www.linkedin.com/company/climescore/",
-    emission2025: 8.9,
-    offset2025: 9.2,
+    emission2025: "",
+    offset2025: "",
     image: ""
   },
   { name: "Varun Hooja", designation: "Co-Founder", description: "Varun Hooja is the Co-Founder and plays a key role in shaping the organization’s vision and growth strategy. He contributes to business development, partnerships, and sustainability initiatives, ensuring alignment with the organization’s climate action objectives.", linkedinUrl: "https://www.linkedin.com/in/varun-hooja/", emission2025: 11.6, offset2025: 12.2, image:'https://iili.io/q5bP1pV.jpg' },
