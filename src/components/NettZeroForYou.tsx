@@ -41,18 +41,54 @@ const NettZeroForYou = () => {
   const isInView = useInView(ref, { once: false, amount: 0.2 });
 
 
-   const [open, setOpen] = useState(false);
-  const [name, setName] = useState("");
+  const [open, setOpen] = useState(false);
   const [message, setMessage] = useState("");
 
-  const handleSubmit = () => {
-    const subject = encodeURIComponent(`New Message from ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\n\nMessage:\n${message}`);
 
-    const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=relationships@nettzero.world&su=${subject}&body=${body}`;
+const [name, setName] = useState("");
+const [email, setEmail] = useState("");
+const [company, setCompany] = useState("");
+const [contact, setContact] = useState("");
+const [enquiry, setEnquiry] = useState("");
 
-    window.open(gmailURL, "_blank");
-  };
+ const handleSubmit = async () => {
+  try {
+    const res = await fetch("https://microoffsets.nettzero.world/api/popup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        company_or_organization: company,
+        contact_number: contact,
+        enquiry,
+        source:'NettZero'
+      }),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      alert("Enquiry sent successfully!");
+      setOpen(false);
+
+      // reset fields
+      setName("");
+      setEmail("");
+      setCompany("");
+      setContact("");
+      setEnquiry("");
+    } else {
+      alert(data.message);
+    }
+
+  } catch (error) {
+    console.error(error);
+    alert("Something went wrong");
+  }
+};
 
   return (
     <section ref={ref} className="min-h-screen relative bg-background py-12 sm:py-16 md:py-24">
@@ -137,30 +173,58 @@ const NettZeroForYou = () => {
       </button>
 
       {/* Modal */}
-      {open && (
+       {open && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
           <div className="bg-white rounded-2xl p-6 w-[90%] max-w-md shadow-xl">
-            <h2 className="text-xl font-semibold mb-4">Get in Touch</h2>
+            <h2 className="border-gray-300 rounded-lg p-3 mb-3 bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary">Get in Touch</h2>
 
+            {/* Name */}
             <input
               type="text"
-              placeholder="Your Name"
-              className="w-full border rounded-lg p-3 mb-3"
-              value={name}
+              placeholder="Your Name *"
+className="w-full border border-gray-300 rounded-lg p-3 mb-3 bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"              value={name}
               onChange={(e) => setName(e.target.value)}
             />
 
+            {/* Email */}
+            <input
+              type="email"
+              placeholder="Your Email *"
+              className="w-full border border-gray-300 rounded-lg p-3 mb-3 bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+
+            {/* Company */}
+            <input
+              type="text"
+              placeholder="Company / Organization"
+              className="w-full border border-gray-300 rounded-lg p-3 mb-3 bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
+              value={company}
+              onChange={(e) => setCompany(e.target.value)}
+            />
+
+            {/* Contact */}
+            <input
+              type="text"
+              placeholder="Contact Number"
+              className="w-full border border-gray-300 rounded-lg p-3 mb-3 bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
+              value={contact}
+              onChange={(e) => setContact(e.target.value)}
+            />
+
+            {/* Enquiry */}
             <textarea
-              placeholder="Your Message"
-              className="w-full border rounded-lg p-3 mb-4 h-28"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Your Enquiry *"
+              className="w-full border border-gray-300 rounded-lg p-3 mb-3 bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
+              value={enquiry}
+              onChange={(e) => setEnquiry(e.target.value)}
             />
 
             <div className="flex justify-end gap-2">
               <button
                 onClick={() => setOpen(false)}
-                className="px-4 py-2 rounded-lg bg-gray-200"
+                className="px-4 py-2 rounded-lg bg-gray-200 text-black"
               >
                 Cancel
               </button>

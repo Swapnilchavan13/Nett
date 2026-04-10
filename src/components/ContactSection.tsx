@@ -12,29 +12,75 @@ const ContactSection = () => {
   const isInView = useInView(ref, { once: false, amount: 0.3 });
   const { toast } = useToast();
   
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    message: "",
-  });
+const [formData, setFormData] = useState({
+  name: "",
+  email: "",
+  company: "",
+  contact: "",
+  message: "",
+  enquiry:"",
+  source: "NettZero"
+});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. We'll get back to you soon.",
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    const res = await fetch("https://microoffsets.nettzero.world/api/popup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        company_or_organization: formData.company,
+        contact_number: formData.contact,
+        enquiry: formData.message, // ✅ correct mapping
+        source: "nettzero", // ✅ MUST match enum exactly
+      }),
     });
-    
-    setFormData({ name: "", email: "", company: "", message: "" });
-    setIsSubmitting(false);
-  };
+
+    const data = await res.json();
+
+    if (data.success) {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for reaching out. We'll get back to you soon.",
+      });
+
+      // ✅ correct reset
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        contact: "",
+        message: "",
+        source:"",
+        enquiry:""
+      });
+
+    } else {
+      toast({
+        title: "Error",
+        description: data.message,
+        variant: "destructive",
+      });
+    }
+
+  } catch (error) {
+    console.error(error);
+    toast({
+      title: "Error",
+      description: "Something went wrong",
+      variant: "destructive",
+    });
+  }
+
+  setIsSubmitting(false);
+};
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -117,6 +163,17 @@ const ContactSection = () => {
                   />
                 </div>
               </div>
+
+              <div className="relative">
+  <Input
+    type="text"
+    name="contact"
+    placeholder="Contact Number (Optional)"
+    value={formData.contact}
+    onChange={handleChange}
+    className="bg-secondary/50 border-border focus:border-primary"
+  />
+</div>
               
               <div className="relative">
                 <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
