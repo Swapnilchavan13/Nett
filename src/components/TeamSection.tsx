@@ -26,15 +26,15 @@ const teamMembers = [
     offset2025: 0,
     image: ""
   },
-   {
-    name: "Ipshita Dwivedi",
-    designation: "Intern",
-    description: "Ipshita Dwivedi is exploring the application of climate finance in sustainability, focusing on funding mechanisms, investment flows, and policy frameworks. Her work highlights opportunities and challenges in implementing climate finance in emerging economies like India.",
-    linkedinUrl: "https://www.linkedin.com/company/climescore/",
-    emission2025: 0,
-    offset2025: 0,
-    image: ""
-  },
+  //  {
+  //   name: "Ipshita Dwivedi",
+  //   designation: "Intern",
+  //   description: "Ipshita Dwivedi is exploring the application of climate finance in sustainability, focusing on funding mechanisms, investment flows, and policy frameworks. Her work highlights opportunities and challenges in implementing climate finance in emerging economies like India.",
+  //   linkedinUrl: "https://www.linkedin.com/company/climescore/",
+  //   emission2025: 0,
+  //   offset2025: 0,
+  //   image: ""
+  // },
    {
     name: "Lohit Verma",
     designation: "Intern",
@@ -46,15 +46,15 @@ const teamMembers = [
   },
   { name: "Mukesh Kevad", designation: "Supervisor – Operations", description: "Mukesh Kevad works as a Supervisor in Operations, overseeing on-ground activities, coordinating teams, and ensuring smooth execution of projects. He plays a key role in maintaining operational efficiency, quality control, and adherence to processes across field operations.", linkedinUrl: "https://www.linkedin.com/company/climescore/", emission2025: 8.1, offset2025: 9.2 },
   { name: "Neelesh Kevat", designation: "Biochar Producer", description: "Neelesh Kevat is a Biochar Producer involved in sustainable biochar production processes that support carbon sequestration and climate-positive outcomes. He contributes to biomass conversion activities and on-ground production efforts aligned with long-term environmental impact goals.", linkedinUrl: "https://www.linkedin.com/company/climescore/", emission2025: 6.9, offset2025: 7.5, image:'https://i.postimg.cc/3wY0Xnv6/img123.jpg' },
-  {
-    name: "Pavani Sambangi",
-    designation: "Intern",
-    description: "Pavani Sambangi is working on the application of GHG accounting and GRI reporting for key Indian sectors. She focuses on measuring, monitoring, and reporting emissions in line with global sustainability practices, while also exploring how GRI standards improve transparency, compliance, and sustainability disclosures.",
-    linkedinUrl: "https://www.linkedin.com/company/climescore/",
-    emission2025: 0,
-    offset2025: 0,
-    image: ""
-  },
+  // {
+  //   name: "Pavani Sambangi",
+  //   designation: "Intern",
+  //   description: "Pavani Sambangi is working on the application of GHG accounting and GRI reporting for key Indian sectors. She focuses on measuring, monitoring, and reporting emissions in line with global sustainability practices, while also exploring how GRI standards improve transparency, compliance, and sustainability disclosures.",
+  //   linkedinUrl: "https://www.linkedin.com/company/climescore/",
+  //   emission2025: 0,
+  //   offset2025: 0,
+  //   image: ""
+  // },
   { name: "Pratyusha Priyanka", designation: "District Owner & Biochar Producer", description: "Pratyusha Priyanka is a District Owner and Biochar Producer, actively involved in decentralized biochar production and sustainable waste-to-resource initiatives. She supports local climate action by managing district-level operations and contributing to carbon sequestration through biochar projects.", linkedinUrl: "https://www.linkedin.com/company/climescore/", emission2025: 6.5, offset2025: 7.3, image:'https://i.postimg.cc/zf8HC0g6/Whats-App-Image-2026-01-06-at-4-48-48-PM.jpg' },
   { name: "Priyanka Giri Shiknis", designation: "Board of Directors", description: "Priyanka Giri Shiknis serves as a Board of Directors, contributing to strategic decision-making, governance, and organizational oversight. She supports the leadership team by providing guidance on long-term vision, policy alignment, and sustainable growth of climate-focused initiatives.", linkedinUrl: "https://www.linkedin.com/in/priyanka-giri-shiknis-212b8b321/", emission2025: 10.5, offset2025: 11.7, image:'https://iili.io/q5mBwzB.jpg' },
   { name: "Rajeev Singh", designation: "District Owner & Biochar Producer", description: "Rajeev Singh oversees district-level biochar production operations, contributing to sustainable agriculture and carbon removal initiatives. His role focuses on implementation, coordination, and ensuring efficient biochar production aligned with environmental and climate goals.", linkedinUrl: "https://www.linkedin.com/company/climescore/", emission2025: 6.8, offset2025: 7.6, image:'https://i.postimg.cc/C5q2Vj4p/Whats-App-Image-2026-01-06-at-5-05-52-PM.jpg' },
