@@ -198,21 +198,47 @@ const Calculator = () => {
     return { total, breakdown };
   };
 
-  const calculate = () => {
-    const scopeTotals: any = {};
-    let grandTotal = 0;
+ const calculate = () => {
+  const scopeTotals: any = {};
+  const scopeBreakdowns: any = {};
+  let grandTotal = 0;
 
-    Object.keys(scopeConfig).forEach((scope) => {
-      const { total } = calculateScope(data[scope]);
-      scopeTotals[scope] = total;
-      grandTotal += total;
-    });
+  Object.keys(scopeConfig).forEach((scope) => {
+    const { total, breakdown } = calculateScope(data[scope]);
+    scopeTotals[scope] = total;
+    scopeBreakdowns[scope] = breakdown;
+    grandTotal += total;
+  });
 
-    setResult({
-      scopes: scopeTotals,
-      total: grandTotal.toFixed(2),
-    });
-  };
+  const chartData = Object.keys(scopeTotals).map((key) => ({
+    name: scopeConfig[key as keyof typeof scopeConfig].title,
+    value: Number(scopeTotals[key].toFixed(2)),
+  }));
+
+  const suggestions = [];
+
+  if (scopeTotals.scope3 > scopeTotals.scope1 && scopeTotals.scope3 > scopeTotals.scope2) {
+    suggestions.push("Reduce Scope 3: Optimize logistics & supplier emissions.");
+  }
+  if (scopeTotals.scope1 > 100) {
+    suggestions.push("High fuel usage: Consider EV transition or fuel efficiency.");
+  }
+  if (scopeTotals.scope2 > 50) {
+    suggestions.push("Electricity high: Switch to renewable energy or optimize AC usage.");
+  }
+
+  setResult({
+    scopes: scopeTotals,
+    breakdowns: scopeBreakdowns,
+    chartData,
+    suggestions,
+    total: {
+      daily: (grandTotal / 30).toFixed(2),
+      weekly: (grandTotal / 4.34).toFixed(2),
+      monthly: grandTotal.toFixed(2),
+    },
+  });
+};
 
 
 
