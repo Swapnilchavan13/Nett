@@ -121,7 +121,7 @@ const TeamSection = () => {
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <div className="text-center">
-              <p className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-gradient">21</p>
+              <p className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-gradient">19</p>
               <p className="text-muted-foreground text-xs sm:text-sm mt-1">Team Members</p>
             </div>
             <div className="text-center">
