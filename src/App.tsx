@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Calculator from "./components/Calculator";
+import {FillForm} from "./components/FillForm";
+
 
 const queryClient = new QueryClient();
 
@@ -18,6 +20,10 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/calculator" element={<Calculator />} />
+
+
+          <Route path="/fillform" element={<FillForm />} />
+
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
