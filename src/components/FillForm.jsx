@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 export const FillForm = () => {
-  // प्रारंभिक स्थिति (Initial Empty State) - डिफ़ॉल्ट रूप से सब खाली रहेगा
+  // प्रारंभिक स्थिति (Initial Empty State)
   const emptyForm = {
     agreementDate: "",
     farmerName: "",
@@ -21,6 +21,9 @@ export const FillForm = () => {
   };
 
   const [formData, setFormData] = useState(emptyForm);
+  const [agreementPage1, setAgreementPage1] = useState(null);
+  const [agreementPage2, setAgreementPage2] = useState(null);
+  const [agreementPage3, setAgreementPage3] = useState(null);
   const [statesList, setStatesList] = useState([]);
   const [loadingStates, setLoadingStates] = useState(false);
   const [submitStatus, setSubmitStatus] = useState("");
@@ -55,7 +58,7 @@ export const FillForm = () => {
   };
 
   const handleSave = async () => {
-    // 1. वैलिडेशन: जांचें कि क्या कोई भी फ़ील्ड खाली है
+    // 1. वैलिडेशन: केवल आवश्यक पाठ्य फ़ील्ड्स की जांच करें (फ़ोटो को छोड़कर)
     const emptyFields = Object.keys(formData).filter((key) => !formData[key] || formData[key].trim() === "");
 
     if (emptyFields.length > 0) {
@@ -64,20 +67,41 @@ export const FillForm = () => {
     }
 
     setSubmitStatus("Saving to database...");
+
+    // फ़ाइलों और पाठ्य डेटा को एक साथ भेजने के लिए FormData का उपयोग करना
+    const dataToSend = new FormData();
+    
+    // सभी पाठ्य फ़ील्ड्स जोड़ें
+    Object.keys(formData).forEach((key) => {
+      dataToSend.append(key, formData[key]);
+    });
+
+    // वैकल्पिक फ़ाइल फ़ील्ड्स जोड़ें (यदि चयनित हों)
+    if (agreementPage1) dataToSend.append("agreementPage1", agreementPage1);
+    if (agreementPage2) dataToSend.append("agreementPage2", agreementPage2);
+    if (agreementPage3) dataToSend.append("agreementPage3", agreementPage3);
+
     try {
+      // नोट: FormData भेजते समय "Content-Type" हेडर को खाली छोड़ दें
       const response = await fetch("https://microoffsets.nettzero.world/api/agreements", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: dataToSend,
       });
       
       if (response.ok) {
         setSubmitStatus("✅ रिकॉर्ड सफलतापूर्वक सुरक्षित कर दिया गया है!");
         
-        // 2. फॉर्म की सभी फ़ील्ड्स को खाली (Reset) करना
+        // फॉर्म रीसेट करना
         setFormData(emptyForm);
+        setAgreementPage1(null);
+        setAgreementPage2(null);
+        setAgreementPage3(null);
+        
+        // फ़ाइल इनपुट तत्वों को मैन्युअली साफ़ करना
+        document.getElementById("file1").value = "";
+        document.getElementById("file2").value = "";
+        document.getElementById("file3").value = "";
 
-        // 4 सेकंड बाद संदेश को हटाना
         setTimeout(() => setSubmitStatus(""), 4000);
       } else {
         setSubmitStatus("❌ बैकएंड सर्वर पर डेटा सहेजने में विफल।");
@@ -88,7 +112,6 @@ export const FillForm = () => {
     }
   };
 
-  // 100% सॉलिड ब्लैक और हाई-विजिबिलिटी इनलाइन स्टाइल्स
   const styles = {
     container: { padding: "15px", maxWidth: "650px", margin: "0 auto", fontFamily: "Arial, sans-serif", backgroundColor: "#f1f5f9" },
     headerCard: { backgroundColor: "#ffffff", padding: "15px", borderRadius: "12px", border: "2px solid #000000", marginBottom: "20px", textAlign: "center" },
@@ -99,6 +122,7 @@ export const FillForm = () => {
     fieldGroup: { display: "flex", flexDirection: "column", marginBottom: "15px" },
     label: { color: "#000000", fontSize: "13px", fontWeight: "bold", marginBottom: "5px", textTransform: "uppercase" },
     input: { height: "45px", border: "2px solid #000000", borderRadius: "8px", padding: "0 10px", fontSize: "15px", color: "#000000", backgroundColor: "#ffffff", fontWeight: "bold" },
+    fileInput: { border: "2px dashed #000000", borderRadius: "8px", padding: "10px", fontSize: "14px", backgroundColor: "#fafafa" },
     buttonRow: { display: "flex", flexDirection: "column", gap: "10px", marginTop: "20px" },
     btnSave: { backgroundColor: "#16a34a", color: "#ffffff", border: "2px solid #000000", padding: "12px", borderRadius: "8px", fontWeight: "bold", cursor: "pointer", fontSize: "16px", textTransform: "uppercase" },
     status: { marginTop: "15px", padding: "12px", border: "2px solid #000000", borderRadius: "8px", backgroundColor: "#eff6ff", color: "#000000", fontWeight: "bold", fontSize: "14px" }
@@ -107,13 +131,11 @@ export const FillForm = () => {
   return (
     <div style={styles.container}>
       
-      {/* शीर्ष लोगो और शीर्षक */}
       <div style={styles.headerCard}>
         <img src="https://i.postimg.cc/bYCvM6fv/nett.webp" alt="NettZero Logo" style={{ height: "45px", objectFit: "contain" }} />
         <h1 style={styles.title}>Biomass Provider Agreement Details Form</h1>
       </div>
 
-      {/* मुख्य फॉर्म */}
       <div style={styles.formCard}>
         <div style={styles.formHeader}>Agreement Specification Parameters</div>
         
@@ -199,14 +221,31 @@ export const FillForm = () => {
             <input style={styles.input} type="text" name="formFilledBy" value={formData.formFilledBy} onChange={handleChange} placeholder="फॉर्म भरने वाले का नाम" />
           </div>
 
-          {/* स्टेटस अलर्ट बॉक्स */}
+          {/* --- नया फोटो अपलोड सेक्शन (वैकल्पिक) --- */}
+          <hr style={{ border: "1px solid #000000", margin: "20px 0" }} />
+          <h3 style={{ color: "#000000", fontSize: "14px", fontWeight: "bold", marginBottom: "10px" }}>UPLOAD AGREEMENT PHOTOS (OPTIONAL)</h3>
+
+          <div style={styles.fieldGroup}>
+            <label style={styles.label}>Agreement Page 1</label>
+            <input id="file1" style={styles.fileInput} type="file" accept="image/*" onChange={(e) => setAgreementPage1(e.target.files[0])} />
+          </div>
+
+          <div style={styles.fieldGroup}>
+            <label style={styles.label}>Agreement Page 2</label>
+            <input id="file2" style={styles.fileInput} type="file" accept="image/*" onChange={(e) => setAgreementPage2(e.target.files[0])} />
+          </div>
+
+          <div style={styles.fieldGroup}>
+            <label style={styles.label}>Agreement Page 3</label>
+            <input id="file3" style={styles.fileInput} type="file" accept="image/*" onChange={(e) => setAgreementPage3(e.target.files[0])} />
+          </div>
+
           {submitStatus && (
             <div style={styles.status}>
               {submitStatus}
             </div>
           )}
 
-          {/* एक्शन बटन ब्लॉक */}
           <div style={styles.buttonRow}>
             <button style={styles.btnSave} onClick={handleSave}>💾 Submit & Save Agreement</button>
           </div>
