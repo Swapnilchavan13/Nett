@@ -112,21 +112,116 @@ export const FillForm = () => {
     }
   };
 
-  const styles = {
-    container: { padding: "15px", maxWidth: "650px", margin: "0 auto", fontFamily: "Arial, sans-serif", backgroundColor: "#f1f5f9" },
-    headerCard: { backgroundColor: "#ffffff", padding: "15px", borderRadius: "12px", border: "2px solid #000000", marginBottom: "20px", textAlign: "center" },
-    title: { color: "#000000", fontSize: "20px", fontWeight: "bold", margin: "10px 0 0 0" },
-    formCard: { backgroundColor: "#ffffff", border: "2px solid #000000", borderRadius: "12px", overflow: "hidden" },
-    formHeader: { backgroundColor: "#000000", color: "#ffffff", padding: "15px", fontWeight: "bold", fontSize: "16px" },
-    formBody: { padding: "15px" },
-    fieldGroup: { display: "flex", flexDirection: "column", marginBottom: "15px" },
-    label: { color: "#000000", fontSize: "13px", fontWeight: "bold", marginBottom: "5px", textTransform: "uppercase" },
-    input: { height: "45px", border: "2px solid #000000", borderRadius: "8px", padding: "0 10px", fontSize: "15px", color: "#000000", backgroundColor: "#ffffff", fontWeight: "bold" },
-    fileInput: { border: "2px dashed #000000", borderRadius: "8px", padding: "10px", fontSize: "14px", backgroundColor: "#fafafa" },
-    buttonRow: { display: "flex", flexDirection: "column", gap: "10px", marginTop: "20px" },
-    btnSave: { backgroundColor: "#16a34a", color: "#ffffff", border: "2px solid #000000", padding: "12px", borderRadius: "8px", fontWeight: "bold", cursor: "pointer", fontSize: "16px", textTransform: "uppercase" },
-    status: { marginTop: "15px", padding: "12px", border: "2px solid #000000", borderRadius: "8px", backgroundColor: "#eff6ff", color: "#000000", fontWeight: "bold", fontSize: "14px" }
-  };
+const styles = {
+  container: { 
+    padding: "10px", // Reduced slightly for maximum screen real-estate on small phones
+    maxWidth: "100%", 
+    margin: "0 auto", 
+    fontFamily: "Arial, sans-serif", 
+    backgroundColor: "#e8e9e9",
+    boxSizing: "border-box"
+  },
+  headerCard: { 
+    maxWidth: "650px",
+    backgroundColor: "#fcfbfb", 
+    padding: "15px", 
+    borderRadius: "12px", 
+    border: "2px solid #000000", 
+    marginBottom: "15px", 
+    textAlign: "center", 
+    margin: '0 auto',
+    boxSizing: "border-box"
+  },
+  title: { 
+    color: "#000000", 
+    fontSize: "18px", // Reduced slightly from 20px so titles don't wrap awkwardly on narrow screens
+    fontWeight: "bold", 
+    margin: "10px 0 0 0" 
+  },
+  formCard: {
+    margin: '0 auto',
+    maxWidth: "650px", 
+    backgroundColor: "#ffffff", 
+    border: "2px solid #000000", 
+    borderRadius: "12px", 
+    overflow: "hidden",
+    boxSizing: "border-box"
+  },
+  formHeader: { 
+    backgroundColor: "#e0dddd", 
+    color: "#000000", 
+    padding: "15px", 
+    fontWeight: "bold", 
+    fontSize: "15px", 
+    borderBottom: "2px solid #000000" 
+  },
+  formBody: { 
+    padding: "12px" // Slightly tighter padding to save vertical scrolling space on mobile
+  },
+  fieldGroup: { 
+    display: "flex", 
+    flexDirection: "column", 
+    marginBottom: "15px" 
+  },
+  label: { 
+    color: "#000000", 
+    fontSize: "12px", 
+    fontWeight: "bold", 
+    marginBottom: "6px", 
+    textTransform: "uppercase",
+    letterSpacing: "0.5px"
+  },
+  input: { 
+    height: "48px", // Increased to 48px for better mobile touch target (recommended mobile standard)
+    border: "2px solid #000000", 
+    borderRadius: "8px", 
+    padding: "0 12px", 
+    fontSize: "16px", // CRITICAL: Changed from 15px to 16px to stop iOS / Safari from auto-zooming on tap
+    color: "#000000", 
+    backgroundColor: "#ffffff", 
+    fontWeight: "bold",
+    boxSizing: "border-box",
+    WebkitAppearance: "none" // Removes default iOS input styling shadows
+  },
+  fileInput: { 
+    border: "2px dashed #000000", 
+    borderRadius: "8px", 
+    padding: "14px 10px", // Increased padding makes it a much easier target to tap on a touchscreen
+    fontSize: "15px", 
+    backgroundColor: "#fafafa",
+    boxSizing: "border-box"
+  },
+  buttonRow: { 
+    display: "flex", 
+    flexDirection: "column", 
+    gap: "10px", 
+    marginTop: "20px" 
+  },
+  btnSave: { 
+    backgroundColor: "#16a34a", 
+    color: "#ffffff", 
+    border: "2px solid #000000", 
+    padding: "14px", // Increased padding for a more solid, easily-tappable action button
+    borderRadius: "8px", 
+    fontWeight: "bold", 
+    cursor: "pointer", 
+    fontSize: "16px", 
+    textTransform: "uppercase",
+    width: "100%",
+    boxSizing: "border-box"
+  },
+  status: { 
+    marginTop: "15px", 
+    padding: "12px", 
+    border: "2px solid #000000", 
+    borderRadius: "8px", 
+    backgroundColor: "#eff6ff", 
+    color: "#000000", 
+    fontWeight: "bold", 
+    fontSize: "14px",
+    boxSizing: "border-box"
+  }
+};
 
   return (
     <div style={styles.container}>
