@@ -7,6 +7,9 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Calculator from "./components/Calculator";
 import {FillForm} from "./components/FillForm";
+import {AllAgreements} from "./components/AllAgreements";
+
+
 
 
 const queryClient = new QueryClient();
@@ -23,6 +26,8 @@ const App = () => (
 
 
           <Route path="/fillform" element={<FillForm />} />
+          <Route path="/showaggrements" element={<AllAgreements />} />
+
 
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
