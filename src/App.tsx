@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Calculator from "./components/Calculator";
 import {FillForm} from "./components/FillForm";
+import {Form} from "./components/Form";
+
 import {AllAgreements} from "./components/AllAgreements";
 
 
@@ -26,6 +28,9 @@ const App = () => (
 
 
           <Route path="/fillform" element={<FillForm />} />
+
+          <Route path="/form" element={<Form />} />
+
           <Route path="/showaggrements" element={<AllAgreements />} />
 
 
