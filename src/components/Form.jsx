@@ -89,7 +89,7 @@ export const Form = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full border rounded-xl p-4 text-base outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full border rounded-xl p-4 text-black outline-none focus:ring-2 focus:ring-green-500"
             />
 
             <input
@@ -99,7 +99,7 @@ export const Form = () => {
               value={formData.lastName}
               onChange={handleChange}
               required
-              className="w-full border rounded-xl p-4 text-base outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full border rounded-xl p-4 text-black outline-none focus:ring-2 focus:ring-green-500"
             />
           </div>
 
@@ -111,7 +111,7 @@ export const Form = () => {
             value={formData.mobileNumber}
             onChange={handleChange}
             required
-            className="w-full border rounded-xl p-4 text-base outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full border rounded-xl p-4 text-black outline-none focus:ring-2 focus:ring-green-500"
           />
 
           {/* Address Section */}
@@ -128,7 +128,7 @@ export const Form = () => {
                 value={formData.address.plotNumber}
                 onChange={handleAddressChange}
                 required
-                className="w-full border rounded-xl p-4"
+                className="w-full border rounded-xl p-4 text-black"
               />
 
               <input
@@ -138,7 +138,7 @@ export const Form = () => {
                 value={formData.address.village}
                 onChange={handleAddressChange}
                 required
-                className="w-full border rounded-xl p-4"
+                className="w-full border rounded-xl p-4 text-black"
               />
 
               <input
@@ -148,7 +148,7 @@ export const Form = () => {
                 value={formData.address.block}
                 onChange={handleAddressChange}
                 required
-                className="w-full border rounded-xl p-4"
+                className="w-full border rounded-xl p-4 text-black"
               />
 
               <input
@@ -158,7 +158,7 @@ export const Form = () => {
                 value={formData.address.district}
                 onChange={handleAddressChange}
                 required
-                className="w-full border rounded-xl p-4"
+                className="w-full border rounded-xl p-4 text-black"
               />
 
               <input
@@ -168,7 +168,7 @@ export const Form = () => {
                 value={formData.address.pin}
                 onChange={handleAddressChange}
                 required
-                className="w-full border rounded-xl p-4"
+                className="w-full border rounded-xl p-4 text-black"
               />
             </div>
           </div>
@@ -181,7 +181,7 @@ export const Form = () => {
             value={formData.aadharNumber}
             onChange={handleChange}
             required
-            className="w-full border rounded-xl p-4"
+            className="w-full border rounded-xl p-4 text-black"
           />
 
           {/* Crop & Land */}
@@ -193,7 +193,7 @@ export const Form = () => {
               value={formData.crop}
               onChange={handleChange}
               required
-              className="w-full border rounded-xl p-4"
+              className="w-full border rounded-xl p-4 text-black"
             />
 
             <input
@@ -203,7 +203,7 @@ export const Form = () => {
               value={formData.landArea}
               onChange={handleChange}
               required
-              className="w-full border rounded-xl p-4"
+              className="w-full border rounded-xl p-4 text-black"
             />
           </div>
 
