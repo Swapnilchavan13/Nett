@@ -28,7 +28,15 @@ const LAP_REPORTS = [
     path: '/assets/Biochar ( orchard prunings)Lab Report_NZ_Himachal.pdf', 
     size: '4.2 MB',
     type: 'pdf'
+  },
+   { 
+    name: 'Elite Lab Report', 
+    fileName: 'Elite lab.pdf', 
+    path: '/assets/Elite lab.pdf', 
+    size: '4.2 MB',
+    type: 'pdf'
   }
+
 ];
 
 const getFileIcon = (type) => {
