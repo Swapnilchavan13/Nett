@@ -36,8 +36,9 @@ const App = () => (
 
           <Route path="/showaggrements" element={<AllAgreements />} />
 
-          <Route path="/dataroom" element={<DataRoom />} />
+          <Route path="/B3-Reports" element={<DataRoom />} />
 
+          <Route path="/dataroom" element={<DataRoom />} />
 
 
 
