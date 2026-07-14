@@ -11,6 +11,9 @@ import {Form} from "./components/Form";
 
 import {AllAgreements} from "./components/AllAgreements";
 
+import {DataRoom} from "./components/DataRoom";
+
+
 
 
 
@@ -32,6 +35,9 @@ const App = () => (
           <Route path="/form" element={<Form />} />
 
           <Route path="/showaggrements" element={<AllAgreements />} />
+
+          <Route path="/dataroom" element={<DataRoom />} />
+
 
 
 
