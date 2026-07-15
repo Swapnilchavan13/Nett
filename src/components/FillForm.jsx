@@ -28,51 +28,27 @@ export const FillForm = () => {
   const [loadingStates, setLoadingStates] = useState(false);
   const [submitStatus, setSubmitStatus] = useState("");
 
- useEffect(() => {
-  setLoadingStates(true);
-
-  const indianStates = [
-    { name: "Andhra Pradesh" },
-    { name: "Arunachal Pradesh" },
-    { name: "Assam" },
-    { name: "Bihar" },
-    { name: "Chhattisgarh" },
-    { name: "Goa" },
-    { name: "Gujarat" },
-    { name: "Haryana" },
-    { name: "Himachal Pradesh" },
-    { name: "Jharkhand" },
-    { name: "Karnataka" },
-    { name: "Kerala" },
-    { name: "Madhya Pradesh" },
-    { name: "Maharashtra" },
-    { name: "Manipur" },
-    { name: "Meghalaya" },
-    { name: "Mizoram" },
-    { name: "Nagaland" },
-    { name: "Odisha" },
-    { name: "Punjab" },
-    { name: "Rajasthan" },
-    { name: "Sikkim" },
-    { name: "Tamil Nadu" },
-    { name: "Telangana" },
-    { name: "Tripura" },
-    { name: "Uttar Pradesh" },
-    { name: "Uttarakhand" },
-    { name: "West Bengal" },
-    { name: "Andaman and Nicobar Islands" },
-    { name: "Chandigarh" },
-    { name: "Dadra and Nagar Haveli and Daman and Diu" },
-    { name: "Delhi" },
-    { name: "Jammu and Kashmir" },
-    { name: "Ladakh" },
-    { name: "Lakshadweep" },
-    { name: "Puducherry" },
-  ];
-
-  setStatesList(indianStates);
-  setLoadingStates(false);
-}, []);
+  useEffect(() => {
+    const fetchStates = async () => {
+      setLoadingStates(true);
+      try {
+        const response = await fetch("https://countriesnow.space/api/v0.1/countries/states", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ country: "India" }),
+        });
+        const result = await response.json();
+        if (result && result.data && result.data.states) {
+          setStatesList(result.data.states);
+        }
+      } catch (error) {
+        console.error("Error fetching states:", error);
+      } finally {
+        setLoadingStates(false);
+      }
+    };
+    fetchStates();
+  }, []);
 
   const handleChange = (e) => {
     setFormData({
@@ -305,23 +281,15 @@ const styles = {
             <input style={styles.input} type="text" name="district" value={formData.district} onChange={handleChange} placeholder="जिला का नाम" />
           </div>
 
-        <div style={styles.fieldGroup}>
-  <label style={styles.label}>State (राज्य)</label>
-  <select
-    style={styles.input}
-    name="state"
-    value={formData.state}
-    onChange={handleChange}
-  >
-    <option value="">-- Select State --</option>
-
-    {statesList.map((state) => (
-      <option key={state.name} value={state.name}>
-        {state.name}
-      </option>
-    ))}
-  </select>
-</div>
+          <div style={styles.fieldGroup}>
+            <label style={styles.label}>State (राज्य)</label>
+            <select style={styles.input} name="state" value={formData.state} onChange={handleChange} disabled={loadingStates}>
+              <option value="" style={{ color: "#000000" }}>-- Select State --</option>
+              {statesList.map((st, index) => (
+                <option key={index} value={st.name} style={{ color: "#000000" }}>{st.name}</option>
+              ))}
+            </select>
+          </div>
 
           <div style={styles.fieldGroup}>
             <label style={styles.label}>Buyer Signatory Name (NettZero Staff)</label>
