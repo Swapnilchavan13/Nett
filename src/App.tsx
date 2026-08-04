@@ -13,6 +13,9 @@ import {AllAgreements} from "./components/AllAgreements";
 
 import {DataRoom} from "./components/DataRoom";
 
+import {Allfarmers} from "./components/Allfarmers";
+
+
 
 
 
@@ -39,6 +42,9 @@ const App = () => (
           <Route path="/B3-Reports" element={<DataRoom />} />
 
           <Route path="/dataroom" element={<DataRoom />} />
+
+          <Route path="/allfarmers" element={<Allfarmers />} />
+
 
 
 
